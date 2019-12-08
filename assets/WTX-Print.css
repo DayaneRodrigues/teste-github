@@ -1,0 +1,199 @@
+@media print {
+    header#header,
+    nav,
+    span#btPrint,
+    a#priceDetails,
+    .sidebar h2,
+    .moreDetails,
+    div#divChat {
+        display: none  !important;
+    }
+    .footerBaixo {
+        padding: 18px  !important;
+    }
+
+    .container-fluid {
+        border: 1px solid;
+    }
+  
+    h2 {
+        color: #355787;
+        font-size: 16px  !important;
+        font-weight: bold;
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
+    h3 {
+        color: #355787;
+        font-size: 16px  !important;
+        font-weight: bold;
+        float: left;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid black !important;
+    }
+  
+    .greeting {
+        float: left !important;
+        border: 1px solid white !important;
+        width: 100% !important;
+        display: block !important;
+        height: 20px !important;
+    }
+
+    .greeting-text {
+        float: left !important;
+        border: 1px solid white !important;
+        width: 65% !important;
+        display: none !important;
+        height: 60px !important;
+    }
+        
+    .botton-data {
+        float: left!important;
+        border: none !important;
+        padding-top: 40px !important;
+        width: 100% !important;
+        display: block!important;
+    }
+    
+    .botton-data-label {
+        float: left!important;
+        border: 1px solid #ccc;
+        margin: 10px !important;
+        display: flex !important;
+        width: 47% !important;
+        padding: 8px;
+    }
+
+    .products {
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .product-item {
+        float: left;
+        height: 65px !important;
+        background-color: #CCC !important;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main-content.main-content-reservation {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .product-item-description {
+        width: 100% !important;
+        float: left;
+        border-bottom: 1px solid white !important;
+    } 
+
+    .product-item-payment {
+        float: none !important;
+        text-align: right !important;
+    }
+
+    .sidebar {
+        border: none !important;
+        float: right !important;
+        width: 100% !important;
+        top: 0 !important;
+    }
+
+    section#confirmation {
+        width: 21cm;
+    }
+
+    .container {
+        width: 100% !important;
+        padding: 0;
+    }
+
+    .product-detail-top {
+        float: left!important;
+        margin-top: 20px!important;
+        width: 100%;
+    }
+
+    .product-detail-top img {
+        float: left !important;
+        width: 100px !important;
+        height: 53px;
+        width: 80px;
+    }
+
+    .product-detail-title {
+        border: none;
+        float: none!important;
+        font-weight: bold;
+        width: 100%!important;
+        text-align: left;
+        margin: 0px 0px 10px;
+    }
+    
+    .order-code-container {
+        text-align: left !important;
+        float: left !important;
+        border: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+        display: block !important;
+        height: auto !important;
+    }
+
+    .order-code-container span {
+        float: none !important;
+        border: none;
+        background: #CCC !important;
+        color: #000 !important;
+        width: auto !important;
+        height: auto;
+        font-weight: bold !important;
+        padding: 3px 20px;
+    }
+
+    span.total-value-item {
+        color: red !important;
+        font-weight: bold !important;
+        float: right !important;
+    }
+
+    .total-value li {
+        list-style: none;
+    }
+
+    ul.total-value {
+        margin: 0px!important;
+        padding: 0;
+    }
+
+    .product-detail img {
+        display: none;
+    }
+
+    .total-value-title {
+        float:right !important;
+        font-weight: bold !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: right !important;
+    }
+
+    .single-payment .multiple-payment,
+    .group-payments .product-item-payment {
+        display: block !important;
+        width: 100% !important;
+        margin: 0px 10px 0px !important;
+        padding: 15px 10px !important;
+        text-align: left !important;
+    }
+
+    .regular-search-results .main-content .texto-html {
+        padding:10px 25px 10px 0px!important;
+
+    }
+}

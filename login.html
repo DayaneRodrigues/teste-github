@@ -1,0 +1,243 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="head">
+    <title>
+        Login
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    
+    <link href="./assets/WTX-Padrao.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="./assets/WTX-BTN.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="./assets/WTX-Print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="./assets/hugo-viagens.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="LTR Safari Chrome Safari78 Chrome78 PTBR ContentBody">
+    <form method="post" action="/login" onsubmit="javascript:return WebForm_OnSubmit();" id="form">
+
+        
+        <div class="content-login">
+            <div class="box-login">
+                <div class="content-logo-login">
+                    <img id="p_lt_ctl00_EditableImage_ucEditableImage_imgImage"
+                        src="./images/logo-cliente.png"  alt="" style="width:300px;" />
+                </div>
+                    
+                <div id="p_lt_ctl01_Login_pnlLogin"
+                    onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;p_lt_ctl01_Login_btnLogin&#39;)">
+
+                    <div id="p_lt_ctl01_Login_frmLogin" class="login-form">
+
+                        <div id="Loading" style="display:none;">
+                            <span id="imgLoading" />
+                        </div>
+
+                        <span id="p_lt_ctl01_Login_rexEmail" class="error-alert"
+                            evaluationfunction="RegularExpressionValidatorEvaluateIsValid" controlapt="txtLogin"
+                            InitialValue="" ValidateEmptyText="0"
+                            regExp="\w+([-+.&#39;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssError="errorField"
+                            style="visibility:hidden;">E-mail inválido.</span>
+
+                        <div class="form-item login-form-user">
+                            <label for="txtLogin" id="p_lt_ctl01_Login_lblLogin" for="login-form-user">E-mail</label>
+                            <input name="p$lt$ctl01$Login$txtLogin" type="text" id="txtLogin" name="login-form-user" placeholder="name@example.com"/>
+
+                            <span id="p_lt_ctl01_Login_rfvLogin" class="error-alert"
+                                evaluationfunction="RequiredFieldValidatorEvaluateIsValid" controlapt="txtLogin"
+                                ControlToHighLight="" CssError="errorField" style="display:none;"></span>
+
+                            <span id="p_lt_ctl01_Login_revEmail" class="error-alert"
+                                evaluationfunction="RegularExpressionValidatorEvaluateIsValid" controlapt="txtLogin"
+                                InitialValue="" ValidateEmptyText="1"
+                                regExp="\w+([-+.&#39;]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" CssError="errorField"
+                                style="display:none;"></span>
+
+                            <span id="p_lt_ctl01_Login_revCPF" class="error-alert"
+                                evaluationfunction="RegularExpressionValidatorEvaluateIsValid" controlapt="txtLogin"
+                                InitialValue="" ValidateEmptyText="1" regExp="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+                                CssError="errorField" style="display:none;"></span>
+                        </div>
+
+                        <div class="form-item login-form-pass">
+                            <label for="p_lt_ctl01_Login_txtPassword" id="p_lt_ctl01_Login_lblPassword">Senha</label>
+                            <input name="p$lt$ctl01$Login$txtPassword" type="password" id="p_lt_ctl01_Login_txtPassword"
+                                name="login-form-pass" placeholder="Senha"/>
+
+                            <span id="p_lt_ctl01_Login_rfvPassword" class="error-alert"
+                                evaluationfunction="RequiredFieldValidatorEvaluateIsValid"
+                                controlapt="p_lt_ctl01_Login_txtPassword" ControlToHighLight="" CssError="errorField"
+                                style="display:none;"></span>
+
+                            <span id="p_lt_ctl01_Login_rfvForgotPassword" class="error-alert"
+                                evaluationfunction="RequiredFieldValidatorEvaluateIsValid" controlapt="txtLogin"
+                                ControlToHighLight="" CssError="errorField" style="display:none;"></span>
+                        </div>
+
+                        <input type="button" name="p$lt$ctl01$Login$btnLogin" value="Continuar"
+                            onclick="location.href='resultado-voos.html'"
+                            id="p_lt_ctl01_Login_btnLogin" class="login-form-login" />
+
+                        <div id="loginconfirmlinks">
+                            <a id="p_lt_ctl01_Login_lnkForgotPassword" class="forgotPass"
+                                href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;p$lt$ctl01$Login$lnkForgotPassword&quot;, &quot;&quot;, true, &quot;validForgotPassword&quot;, &quot;&quot;, false, true))">Esqueci
+                                minha senha</a>
+                            <a id="p_lt_ctl01_Login_lnkRegister" href="/cadastro-empresa"
+                                href="javascript:__doPostBack(&#39;p$lt$ctl01$Login$lnkRegister&#39;,&#39;&#39;)">Cadastrar
+                                empresa</a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div style="display:none;">
+                    <div id="divRegisterBoth">
+                        <a id="p_lt_ctl01_Login_lkbtnRegisterBothB2C" class="lkbtnRegisterBoth lkbtnRegisterBothB2C"
+                            href="javascript:__doPostBack(&#39;p$lt$ctl01$Login$lkbtnRegisterBothB2C&#39;,&#39;&#39;)"></a>
+                        <a id="p_lt_ctl01_Login_lkbtnRegisterBothB2B" class="lkbtnRegisterBoth lkbtnRegisterBothB2B"
+                            href="javascript:__doPostBack(&#39;p$lt$ctl01$Login$lkbtnRegisterBothB2B&#39;,&#39;&#39;)"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content-img-background-login">
+            <img id="p_lt_ctl02_EditableImage1_ucEditableImage_imgImage"
+                src="https://thewallpaper.co//wp-content/uploads/2016/10preview/city-at-night-travel-wallpapers-hd-wallpaper-hd-download-free-background-images-amazing-high-definition-4k-2560x1600.jpg"
+                alt="" />
+
+
+        </div>
+
+        <footer class="myfooter">
+            <div class="myfooterBaixo">
+                <div class="myfooterEndereco">
+
+                </div>
+                <div class="myfooterLogo">
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var Page_Validators = new Array(document.getElementById("p_lt_ctl01_Login_rexEmail"), document.getElementById("p_lt_ctl01_Login_rfvLogin"), document.getElementById("p_lt_ctl01_Login_revEmail"), document.getElementById("p_lt_ctl01_Login_revCPF"), document.getElementById("p_lt_ctl01_Login_rfvPassword"), document.getElementById("p_lt_ctl01_Login_rfvForgotPassword"));
+//]]>
+        </script>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var p_lt_ctl01_Login_rexEmail = document.all ? document.all["p_lt_ctl01_Login_rexEmail"] : document.getElementById("p_lt_ctl01_Login_rexEmail");
+            p_lt_ctl01_Login_rexEmail.controltovalidate = "txtLogin";
+            p_lt_ctl01_Login_rexEmail.focusOnError = "t";
+            p_lt_ctl01_Login_rexEmail.validationGroup = "validForgotPassword";
+            p_lt_ctl01_Login_rexEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+            var p_lt_ctl01_Login_rfvLogin = document.all ? document.all["p_lt_ctl01_Login_rfvLogin"] : document.getElementById("p_lt_ctl01_Login_rfvLogin");
+            p_lt_ctl01_Login_rfvLogin.controltovalidate = "txtLogin";
+            p_lt_ctl01_Login_rfvLogin.focusOnError = "t";
+            p_lt_ctl01_Login_rfvLogin.display = "None";
+            p_lt_ctl01_Login_rfvLogin.validationGroup = "validLogin";
+            p_lt_ctl01_Login_rfvLogin.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            p_lt_ctl01_Login_rfvLogin.initialvalue = "";
+            var p_lt_ctl01_Login_revEmail = document.all ? document.all["p_lt_ctl01_Login_revEmail"] : document.getElementById("p_lt_ctl01_Login_revEmail");
+            p_lt_ctl01_Login_revEmail.controltovalidate = "txtLogin";
+            p_lt_ctl01_Login_revEmail.focusOnError = "t";
+            p_lt_ctl01_Login_revEmail.errormessage = "E-mail inválido.";
+            p_lt_ctl01_Login_revEmail.display = "None";
+            p_lt_ctl01_Login_revEmail.validationGroup = "validLogin";
+            p_lt_ctl01_Login_revEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+            var p_lt_ctl01_Login_revCPF = document.all ? document.all["p_lt_ctl01_Login_revCPF"] : document.getElementById("p_lt_ctl01_Login_revCPF");
+            p_lt_ctl01_Login_revCPF.controltovalidate = "txtLogin";
+            p_lt_ctl01_Login_revCPF.focusOnError = "t";
+            p_lt_ctl01_Login_revCPF.errormessage = "CPF inválido.";
+            p_lt_ctl01_Login_revCPF.display = "None";
+            p_lt_ctl01_Login_revCPF.enabled = "False";
+            p_lt_ctl01_Login_revCPF.validationGroup = "validLogin";
+            p_lt_ctl01_Login_revCPF.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+            var p_lt_ctl01_Login_rfvPassword = document.all ? document.all["p_lt_ctl01_Login_rfvPassword"] : document.getElementById("p_lt_ctl01_Login_rfvPassword");
+            p_lt_ctl01_Login_rfvPassword.controltovalidate = "p_lt_ctl01_Login_txtPassword";
+            p_lt_ctl01_Login_rfvPassword.focusOnError = "t";
+            p_lt_ctl01_Login_rfvPassword.display = "None";
+            p_lt_ctl01_Login_rfvPassword.validationGroup = "validLogin";
+            p_lt_ctl01_Login_rfvPassword.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            p_lt_ctl01_Login_rfvPassword.initialvalue = "";
+            var p_lt_ctl01_Login_rfvForgotPassword = document.all ? document.all["p_lt_ctl01_Login_rfvForgotPassword"] : document.getElementById("p_lt_ctl01_Login_rfvForgotPassword");
+            p_lt_ctl01_Login_rfvForgotPassword.controltovalidate = "txtLogin";
+            p_lt_ctl01_Login_rfvForgotPassword.focusOnError = "t";
+            p_lt_ctl01_Login_rfvForgotPassword.display = "None";
+            p_lt_ctl01_Login_rfvForgotPassword.validationGroup = "validForgotPassword";
+            p_lt_ctl01_Login_rfvForgotPassword.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+            p_lt_ctl01_Login_rfvForgotPassword.initialvalue = "";
+//]]>
+        </script>
+
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var loginResource = {
+                addUsers: 'Adicionar Usuários',
+                listUsers: 'Lista de Usuarios',
+                RegisterBoth: 'Novo cadastro',
+                CPFNotFound: 'Informe um CPF já cadastrado.',
+                ForgotPassword: 'Esqueci minha senha',
+                agencyReserve: 'Reservas da Agência',
+                URLLogin: '/login',
+                LoginButton: 'Continuar',
+                WatermarkLogin: 'E-mail',
+                Password: 'Senha',
+                ResentEmailPassword: 'Senha reenviada para o e-mail.',
+                myRegistry: 'Meu Cadastro',
+                agencyEdit: 'Editar Cadastro Agência',
+                agencyData: 'Dados da Agência',
+                WatermarkLoginCpf: 'CPF',
+                RegisterB2B: 'Cadastrar empresa',
+                RegisterB2C: 'Cadastre-se',
+                myReserves: 'Minhas reservas',
+                EmailNotFound: 'Informe um e-mail já cadastrado.',
+                RegisterUserCorporate: 'Clique aqui e faça seu cadastro',
+                LoginWelcomeMessage: 'Bem vindo {0} o que deseja fazer...',
+                RegisterBothB2C: 'Pessoa física',
+                RegisterBothB2B: 'Pessoa jurídica',
+                lblLoginError: 'Usuário ou senha inválido!',
+                editMyRegistry: 'Editar Meu Cadastro',
+                revEmail: 'E-mail inválido.',
+                User: 'E-mail',
+                revCpf: 'CPF inválido.',
+            }
+
+//]]>
+        </script>
+    </form>
+</body>
+
+</html>

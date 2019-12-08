@@ -1,0 +1,3897 @@
+@charset "utf-8";
+/* CSS Document */
+
+h3{
+	display: inline-block;
+    padding: 0 !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+    text-shadow: none !important;
+	letter-spacing:0 !important;
+}
+
+.flight_details, .flight_details_map, .map-search-results, .matrix-search-results, .reduced-search-results, .flight_details_prices, .reservation_details {
+	margin:50px auto;
+	width:930px;
+	*padding-bottom:50px;
+}
+.regular-search-results 
+{
+	margin:10px auto;
+}
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+.text-field {
+}
+.field-more a {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/field-more_a.gif) no-repeat;
+	width:94px;
+	height:20px;
+	outline:none;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	text-shadow:0 1px 0 #fff;
+	padding:5px 0 0 8px;
+	display:inline-block;
+	vertical-align:middle;
+	vertical-align:-1px\9;
+	*vertical-align:-5px;
+	*margin-left:2px;
+}
+.field-more a:active {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/field-more_a_active.gif) no-repeat;
+}
+.clear {
+	clear:both;
+}
+a.calendar-icon {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/calendario.gif) no-repeat;
+	width:19px;
+	height:18px;
+	text-decoration:none;
+	display:inline-block;
+	vertical-align:-2px;
+	*vertical-align:3px;
+}
+
+.tooltip {
+	display:none;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/flight-class-horizontal-modal.png) no-repeat;
+	height:106px;
+	padding:23px 0 0 20px;
+	width:445px;
+	font-size:11px;
+	color:#fff;
+	left:-335px !important;
+	top:-88px !important;
+}
+.tooltip label {
+	color:#666 !important;
+}
+
+.tooltip-title {
+    display: inline-block !important;
+}
+
+.tooltip-i {
+    width:12px !important;
+    height:12px !important;
+    margin-top: 3px;
+    margin-left: 5px;
+    display: inline-block !important;
+    overflow: hidden;
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.PadraoNew/img/i.png") no-repeat !important;
+    text-indent: -999px;
+}
+
+
+.tooltip, .tooltip-i h3, .tooltip div {
+    margin: 0;
+}
+
+#tooltip{
+    background-color: #eef6fd;
+    border: 1px solid #355787;
+    color: #3d3d3d;
+    position: absolute;
+    width: 300px;
+    z-index: 3000;
+    
+}
+
+    #tooltip h3, 
+    #tooltip .tooltip-header {
+        background: none repeat scroll 0 0 #355787;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 12px;
+        line-height: normal;
+        padding: 2px 5px !important;
+        width: 100% !important;
+    }
+    
+    #tooltip .url {
+        padding: 2px 5px;
+    }
+
+#tooltip .body {
+    padding: 5px;
+}
+
+
+.field-flight-name input {
+	font-style:italic;
+	width:188px;
+	vertical-align:-2px;
+	*vertical-align:-6px;
+}
+.field-flight-name label {
+	padding-bottom:1px;
+}
+.field-class div.selector {
+	width:198px !important;
+}
+.field-class div.selector span {
+	width:168px !important;
+}
+
+/* TELA DE RESULTADO DA BUSCA */
+
+.regular-search-results > ul li {
+    display: inline-block;
+}
+
+.regular-search-results > ul li a{
+    background: #ddd;
+    border-radius: 10px 10px 0 0;
+    color: #333;
+    margin-right: 4px;
+    padding: 10px 15px;
+}
+
+.regular-search-results > ul li a:hover{
+    background: #bbb;
+    color: #fff;
+}
+
+.regular-search-results > ul li.selected a,
+.regular-search-results > ul li.selected a:hover{
+    background: #5c97d0;
+    color: #fff;
+}
+
+.main-content {
+	width:72%;
+	display:inline-block;
+	vertical-align:top;
+}
+.main-content-top {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-top.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.main-content-top h2 {
+	color: #FFFFFF !important;
+    float: left;
+    font-size: 20px !important;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 2;
+}
+.main-content-top-center {
+	position:absolute;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+	z-index:1;
+}
+.main-content-top-right {
+	width:50px;
+	height:40px;
+	float:right;
+	margin: -12px -15px 0 0;
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-top-right.png") no-repeat;
+}
+.the-content {
+	border-left:1px solid #E2E3E6;
+	border-right:1px solid #E2E3E6;
+	border-bottom:1px solid #E2E3E6;
+	position:relative;
+	background: none repeat scroll 0 0 #FFFFFF;
+    color:#333;
+}
+.the-content-top {
+	background-color:#f0f0f0;
+    color:#333;
+	padding:15px 22px;
+	margin:0 !important;
+    font-size: 15px;
+    line-height: 24px;
+}
+.the-content-top strong > span {
+    display: inline-block;
+    font-size: 18px;
+/*    margin-top: -2px;*/
+}
+.search-results-details-1 {
+	color:#333;
+	font-size:16px;
+	margin-bottom:5px;
+	padding-bottom:0 !important;
+}
+.search-results-details-1 strong {
+	font-size:18px;
+}
+.search-results-details-2 {
+	color:#333;
+	font-size:14px;
+	margin-bottom:15px;
+}
+.tabs-n-order .tabs{
+	width:auto !important;
+	border:none;
+}
+.tabs-n-order .search-results-order{
+    margin-top:-30px;
+	float:right !important;
+}
+.tabs-n-order .search-results-order > span{
+	position:relative;
+	top:3px;
+}
+.tabs-n-order {
+	position:relative;
+	clear:right;
+	height:32px;
+}
+ul.tabs {
+	list-style:none;
+	display:inline-block;
+	height:auto !important;
+}
+ul.tabs li {
+	display:inline-block;
+	margin-right:10px;
+	text-align:center;
+	*float:left;
+	background:none !important;
+}
+ul.tabs li#btnIda{
+	width:47px;
+}
+ul.tabs li#btnVolta{
+	width:59px;
+}
+ul.tabs li a,  ul.tabs li.active a {
+	background:none;
+	border:none;
+	color:#333;
+	font-size:13px;
+	padding:0 !important;
+	display:block;
+	text-decoration:none;
+	width:auto;
+	height:auto;
+	float:none;
+	line-height:32px;
+}
+ul.tabs li a:hover, ul.tabs li.active a:hover {
+	text-decoration:underline;
+	color:#909090;
+}
+ul.tabs li.selected-tab a {
+	color:#333;
+	font-weight:bold;
+}
+ul.tabs li.selected-tab a:hover {
+	text-decoration:none;
+}
+ul.tabs li#btnIda.selected-tab a{
+	background:#fff !important;
+	border:none !important;
+}
+ul.tabs li#btnVolta.selected-tab a{
+	background: #fff;
+}
+.agrupador-fsx-resultados .search-results-order {
+	display:inline-block;
+	position:absolute;
+	right: 10px;
+    top: -25px;
+	color:#333;
+	font-size:13px;
+	margin-top:4px;
+	padding-bottom :5px;
+	width:auto !important;
+}
+.search-results-order .selector {
+	width:150px;
+	vertical-align: -8px;
+}
+.search-results-order .selector span {
+	width:125px;
+	font-style:normal !important;
+}
+.search-results-order .selector select {
+	min-width:160px;
+	*width:160px;
+}
+.agrupador-fsx-resultados .content-module {
+	 margin:15px 10px;
+	 clear: both !important;
+}
+.flight-details-pictures {
+	position:relative;
+	margin-right:20px;
+	text-decoration:none;
+}
+.flight-details-pictures span {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/flight-details-pictures.png) no-repeat;
+	width:125px;
+	height:25px;
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.flight-details-pictures:hover span {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/flight-details-pictures-hover.png) no-repeat;
+}
+.flight-details-pictures, .flight-main-details, .flight-details-price, .flight-details-stamps {
+	vertical-align:top;
+}
+.flight-main-details {
+	width:100%;
+}
+.flight-main-details h3 {
+	color:#333;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:5px;
+	margin-top:-2px;
+}
+.flight-main-details p {
+	font-size:13px;
+	color:#333;
+	margin-top:10px;
+}
+.main-details-category {
+	color:#E98C00;
+	font-size:13px;
+	font-weight:bold;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/main-details-category.png) no-repeat left;
+	padding-left:25px;
+	margin-right:10px;
+}
+.main-details-feedback {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/main-details-feedback.png) no-repeat;
+	width:23px;
+	height:18px;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+	padding:2px 0 0 27px;
+	margin-right:5px;
+}
+.main-details-grade {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/main-details-grade.png) no-repeat;
+	width:26px;
+	height:18px;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+	display:inline-block;
+	padding:2px 0 0 29px;
+}
+.flight-details-price label {
+	display:block;
+}
+.flight-details-stamps {
+    text-align: center;
+    width: 100px;
+}
+.flight-details-stamps img {
+	display:inline-block;
+	margin-top:19px;
+	margin-right:10px;
+}
+.flight-details-price {
+	letter-spacing:-1px;
+	position: relative;
+	padding-left: 20px;
+	float:right;
+}
+#divPaymentOptionsB2B > input {
+    display: inline-block;
+    margin: 3px 5px 0 0 !important;
+}
+#divPaymentOptionsB2B > label {
+    margin-right: 15px;
+}
+#outputInt .flight-details-price 
+{
+    padding-left: 25px;
+}
+.previous-price {
+	color:#999;
+	text-decoration:line-through;
+	font-size:13px;
+	display:block;
+	text-align:right;
+	margin:1px 0 -2px 0;
+}
+.the-currency {
+	color:#666 !important;
+	font-size:12px !important;
+	font-weight:normal !important;
+	left:0 !important;
+    position: absolute !important;
+    top: 5px !important;
+}
+.the-price {
+	color:#CC0000;
+	font-weight:bold;
+	font-size:30px;
+	letter-spacing:-2px;
+	line-height: 30px;
+}
+.flight-details-price .checkbox {
+	letter-spacing:normal;
+	margin-right:1px;
+	margin-top:20px;
+}
+
+.checkbox input {
+	vertical-align:-2px;
+	margin-right:4px;
+	*margin-right:0px;
+}
+.more-details-closed {
+}
+.agrupador-fsx-resultados .open-more-details, .main-content-confirmation .open-more-details {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details.png) no-repeat left !important;
+	height:25px !important;
+	display:block;
+	color:#333 !important;
+	font-size:12px !important;
+	font-weight:bold !important;
+	clear:both !important;
+}
+.open-more-details span {
+	padding:2px 0 0 25px;
+	float:left;
+}
+.open-more-details span.open-more-details-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details-span.png) no-repeat right;
+	height:25px;
+	width:50px;
+	display:block;
+	float:right;
+	padding:0;
+}
+.agrupador-fsx-resultados .open-more-details:hover {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details-hover.png) no-repeat left !important;
+}
+.agrupador-fsx-resultados .open-more-details:hover span.open-more-details-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details-span-hover.png) no-repeat right !important;
+}
+.close-more-details {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/close-more-details.png) no-repeat left;
+	height:25px;
+	display:block;
+	color:#333;
+	font-size:12px;
+	font-weight:bold;
+}
+.close-more-details span {
+	padding:2px 0 0 25px;
+	float:left;
+}
+.close-more-details span.close-more-details-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/close-more-details-span-hover.png) no-repeat right;
+	height:25px;
+	width:50px;
+	display:block;
+	float:right;
+	padding:0;
+}
+.more-details-opened {
+	display:none;
+	border-color: #BBBBBB;
+    border-style: solid;
+    border-width: 1px 1px 0;
+}
+.more-details-opened-content {
+	background-color:#F6F6F6;	
+}
+
+#outputInt .more-details-opened-content{
+	background:#F6F6F6 !important;
+	margin:0;
+}
+
+#outputInt .close-more-details, #outputInt .open-more-details{
+	margin:0 !important;
+}
+
+.more-details-opened-top {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/more-details-opened-top.png) no-repeat left;
+	height:10px;
+	display:none;
+	*float:left;
+	*width:100%;
+}
+.more-details-opened-top-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/more-details-opened-top-right.png) no-repeat right;
+	height:10px;
+	width:50px;
+	display:block;
+	float:right;
+}
+.more-details-module {
+	width:202px;
+	margin:0 10px;
+	display:inline-block;
+	vertical-align:top;
+	*float:left;
+}
+.more-details-module h4 {
+	color:#0080BA;
+	font-weight:bold;
+	font-size:14px;
+	margin:10px 0;
+}
+.more-details-module p {
+	color:#333;
+	font-size:13px;
+	line-height:1.4;
+}
+.more-details-module ul {
+	list-style-image:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/more-details-module-bullet.png);
+	list-style-position:inside;
+	*list-style-image:none;
+	*list-style-position:outside;
+}
+.more-details-module ul li {
+	color:#333;
+	font-size:13px;
+	line-height:2;
+	*background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/more-details-module-bullet.png) no-repeat left 7px;
+	*padding-left:22px;
+}
+a.how-to-get-there-map-link span {
+	color:#666;
+	font-size:11px;
+}
+a.how-to-get-there-map-link:hover span {
+	text-decoration:underline;
+}
+.more-details-social-module {
+	padding: 15px 10px;
+	*padding: 5px 10px 15px;
+	*clear:both;
+}
+.more-details-social-module span {
+	color:#666;
+	font-size:14px;
+	font-weight:bold;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.more-details-social-module a {
+	/*height:20px;*/
+	margin-bottom: 10px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:5px;
+}
+.more-details-social-email {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/more-details-social-email.gif) no-repeat;
+	width:70px;
+}
+.more-details-social-facebook {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/more-details-social-facebook.gif) no-repeat;
+	width:83px;
+}
+.more-details-social-twitter {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/more-details-social-twitter.gif) no-repeat;
+	width:68px;
+}
+.more-details-social-tribt {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/more-details-social-tribt.gif) no-repeat;
+	width:68px;	
+}
+.rooms-periods {
+	margin:0 10px;
+	*margin:0 0 40px 3px;
+	*float:left;
+	*width:99%;
+}
+.rooms-periods-item {
+	font-size:12px;
+	line-height:1.5;
+}
+.rooms-period-item-line {
+	background-color:#fff;
+	padding:8px 0 8px 15px;
+	*padding:8px 0 8px 15px;
+	border-bottom:1px solid #EEEFF7;
+	*float:left;
+	*margin:0 0 0 8px;
+}
+.rooms-period-item-tab {
+	background-color:#fafafa;
+	border:1px solid #f0f0f0;
+	-moz-border-radius-bottomleft:7px;
+	-moz-border-radius-bottomright:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	margin:-1px 10px 10px;
+	*margin:0 25px 10px 20px;
+	padding:10px 12px;
+	color:#666;
+	display:none;
+	clear:both;
+	*float:left;
+	*width:625px;
+}
+.rooms-period-item-line:hover {
+	background-color:#f0f0f0;
+}
+.rooms-periods-item-part {
+	display:inline-block;
+	vertical-align:top;
+	*float:left;
+	*padding-right:10px;
+}
+.room-regime {
+	width:140px;
+}
+.rooms-periods-item-part label {
+	display:block;
+}
+.average-period-price {
+	width:210px;
+	*width:180px;
+}
+.period-total {
+	width:190px;
+	*width:170px;
+}
+.average-period-price label, .period-total label {
+	text-align:center;
+}
+.average-period-price label strong, .period-total label strong {
+	display:block;
+}
+.rooms-period-item-tab table {
+	width:100%;
+}
+.rooms-period-item-tab-titulo {
+	padding-bottom:8px;
+}
+.rooms-period-item-tab-titulo strong {
+	display:inline !important;
+}
+.rooms-period-item-tab table td strong {
+	display:block;
+}
+.close-more-details, .open-more-details {
+	cursor:pointer;
+}
+.period-total label {
+	display:inline-block;
+	vertical-align:middle;
+}
+.period-total-open, .period-total-close {
+	width:20px;
+	height:20px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:10px;
+	margin-top:2px;
+	cursor:pointer;
+}
+.rooms-period-item-line:hover .period-total-open {
+	display:inline-block;
+}
+.period-total-open {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/period-total-open.gif) no-repeat;
+	display:none;
+}
+.period-total-close {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/period-total-close.gif) no-repeat;
+	display:none;
+}
+.more-results {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/more-results.png) no-repeat;
+	width:172px;
+	height:32px;
+	display:block;
+	margin:30px auto 0;
+	*margin:0 auto;
+}
+.main-content-bottom {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-bottom.png") no-repeat scroll left center transparent;
+    display: none;
+    float: left;
+    height: 40px;
+    margin-bottom: 11px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 755px;
+}
+.main-content-bottom-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-bottom-right.png) no-repeat right;
+	height:40px;
+	display:block;
+	float:right;
+	width:50px;
+}
+.flight-all-info {
+	margin-top:40px;
+	*margin-top:0;
+	*padding-top:20px;
+	*position:relative;
+}
+.main-content-confirmation .flight-all-info{
+	margin:40px 20px !important;
+}
+.sidebar,
+#dvTabSelectedFlights{
+	display:inline-block;
+	vertical-align:top;
+	background-color:#f1f2f5;
+	margin-bottom:20px;
+    width:100%;
+    color:#333;
+}
+
+.departureFlight-holder .subtitle,
+.arrivalFlight-holder .subtitle{
+    background: #bbb;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    height: 15px;
+    left: -5px;
+    position: relative;
+    text-align: center;
+    top: -5px;
+    width: 15px;
+}
+
+.departureFlight-holder .departureFlight-holder,
+.sidebar > .sidebar-item > .flight-info > .departureFlight-holder{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/sidebar-item.gif") repeat-x scroll center bottom;
+}
+
+.sidebar-holder {
+	display:inline-block;
+	width:27%;
+	vertical-align:top;
+	float:right;
+}
+
+.main-content-confirmation + .sidebar {
+    float: right;
+    width: 25%;
+}
+
+.sidebar label
+{
+    color: #666666;
+    display: block;
+    font-size: 13px;
+    line-height: 1.8;
+    padding-left: 2px;    
+}
+
+.sidebar-top {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-top.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;    
+    position: relative;
+    width: 100%;
+}
+.sidebar-top h2 {
+	color: #FFFFFF !important;
+    float: left;
+    font-size: 20px !important;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 0 !important;
+    margin-left: 0;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 2;
+}
+.sidebar-top-right {
+	width: 50px;
+	height: 40px;
+	position:absolute;
+	top:0;
+	left:155px;
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/main-content-top-right.png") no-repeat scroll 0 0 transparent;        
+}
+.sidebar-item{
+	margin:20px 8px;
+	clear:both;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/sidebar-item.gif) repeat-x bottom;
+	padding-bottom:20px;
+}
+
+.flight-airport-item{
+	margin:20px 0;
+	clear:both;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/sidebar-item.gif) repeat-x bottom;
+	padding-bottom:20px;
+}
+
+.iataAero {
+    margin: 0 5px;
+}
+
+.flight-airport-item .check {
+    margin: 6px 6px 0 0;
+}
+.sidebar-item .sidebar-item {
+    background: none;
+    margin: 15px 0 !important;
+    padding-bottom: 0;
+}
+
+.sidebar-item.Companie .selection-details{
+    float:none;
+	margin:15px 0 !important;
+}
+
+.sidebar-item h3 {
+	color:#3A3A38;
+	font-size:16px;
+	font-weight:bold;
+	position:relative;
+    display: block;
+}
+#divDayPeriod label input, 
+#divDayPeriod label strong {
+    line-height: 20px;
+    margin-top: 3px;
+    margin-right: 4px;
+}
+#divDayPeriod label span{
+    color: #999999;
+    float: right;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    *margin-top:-20px;
+}
+.sidebar span { color: #666666; display:inline-block;}
+
+.AirportGo .check, .AirportBack .check {
+    margin: 5px 2px 0 0;
+}
+
+#divDayPeriod label {
+    color: #333;
+    font: bold 12px/20px Arial,Helvetica,sans-serif;
+    height: 20px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 6px 40px 6px 0;
+}
+#divDayPeriod label.lbl-preco-manha {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat scroll right 3px transparent;
+}
+#divDayPeriod label.lbl-preco-tarde {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat scroll right -36px transparent;
+}
+#divDayPeriod label.lbl-preco-noite {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat scroll right -72px transparent;
+}
+#divDayPeriod label.lbl-preco-madrugada {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat scroll right -110px transparent;
+}
+#divFilterAmount span#divFilterAmountText,
+#divAirportGo span.iataAero,
+#divAirportBack span.iataAero
+{
+    margin: 0 5px;
+}
+.barra-preco {
+    margin-left: 8px;
+    padding-top: 5px;
+}
+.barra-preco p input {
+	border:none;
+	background:transparent;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+}
+.bt-slider,
+.ui-slider-handle {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/slider-right.png) no-repeat 0 3px !important;
+	border:none !important;
+	width:22px !important;
+	height:22px !important;
+	top:-8px !important;
+}
+
+.ui-slider-handle:first-of-type{
+  width:17px;
+  height:20px;
+  background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/slider-left.png) no-repeat 0 3px !important;
+  z-index: 99;
+}
+.ui-slider-handle:last-child{
+  width:17px;
+  height:20px;
+  background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/slider-right.png) no-repeat 0 3px !important;
+}
+
+.slider-range,
+#slider-range {
+	background: #c5c7cd;
+    border-radius: 10px !important;
+	border:none !important;
+	margin-top:15px;
+}
+.ui-widget-header {
+	border:none !important;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/ui-widget-header.png) repeat-x !important;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 1px !important;
+}
+
+.sidebar .category a {
+	display:inline-block;
+	*float:left;
+	width:18px;
+	height:17px;
+	vertical-align:middle;
+	*margin-right:3px;
+}
+a.category-star {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/category-star.png) no-repeat;
+}
+a.category-star:hover {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/category-star-hover.png) no-repeat;
+}
+a.category-star-disable {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/category-star-disable.png) no-repeat;
+}
+a.category-star-disable:hover {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/category-star-hover.png) no-repeat;
+}
+.category-star-label {
+	color:#333;
+	font-size:13px;
+	vertical-align:middle;
+	margin-left:10px;
+}
+.facilities label {
+	display:block;
+	font-size:13px;
+	color:#666;
+	line-height:1.8;
+	padding-left:2px;
+}
+.location .selector {
+	width:175px;
+	vertical-align: -8px;
+}
+.location .selector span {
+	width:150px;
+	font-style:normal !important;
+}
+.location .selector select {
+	min-width:185px;
+	*width:185px;
+}
+.location-map-link {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/location-map-link.png) no-repeat left;
+	padding-left:30px;
+	display:inline-block;
+	margin-top:10px;
+	color:#264691;
+	font-size:12px;
+	font-weight:bold;
+	height:18px;
+	padding-top:4px;
+}
+.location-map-link:hover {
+	text-decoration:underline;
+}
+.alphabetical-filter {
+	background:none !important;
+}
+.alphabetical-filter .selector {
+	width:175px;
+	vertical-align: -8px;
+}
+.alphabetical-filter .selector span {
+	width:150px;
+	font-style:normal !important;
+	font-weight:bold !important;
+}
+.alphabetical-filter .selector select {
+	min-width:185px;
+	*width:185px;
+}
+.filters-action-button {
+	text-align:center;
+	background:none !important;
+	margin-bottom:10px !important;
+}
+.filters-action-button input {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/filters-action-button.png) no-repeat;
+	width:123px;
+	height:32px;
+	border:none;
+	display:block;
+	margin:auto;
+}
+.period span {
+	color:#666;
+	font-size:12px;
+}
+.period-selector {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/period-selector.png) no-repeat;
+	width:160px;
+	height:28px;
+	display:block;
+	position:relative;
+	margin:10px auto 0;
+}
+.period-selector-subtract {
+	display:block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:3px;
+	left:2px;
+}
+.period-selector-add {
+	display:block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:3px;
+	right:3px;
+}
+.period-selector input {
+	background:transparent;
+	width:40px;
+	position:absolute;
+	top:6px;
+	left:60px;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	color:#264691;
+	border:none;
+}
+.reduced-flight-info {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info.png) repeat-x;
+	height:33px;
+	position:relative;
+	padding-top:12px;
+}
+.reduced-flight-info-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info-right2.png) no-repeat right;
+	width:20px;
+	height:45px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.reduced-flight-info-holder .reduced-flight-info-toogle {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/reduced-flight-info-toogle-open.png) no-repeat;
+	width:46px;
+	height:45px;
+	position:absolute;
+	left:0;
+	top:0;
+	cursor:pointer;
+}
+.reduced-flight-info-holder2 .reduced-flight-info-toogle {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/reduced-flight-info-toogle-close.png) no-repeat;
+	width:46px;
+	height:45px;
+	position:absolute;
+	left:0;
+	top:0;
+	cursor:pointer;
+}
+.reduced-flight-info h3 {
+	display:inline-block;
+	*float:left;
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+	margin-left:65px;
+	width:310px;
+}
+.reduced-flight-info-price {
+	color:#CC0000;
+	font-size:16px;
+	text-align:right;
+	float:right;
+	margin-right:20px;
+	*margin-top:-19px;
+}
+.reduced-flight-info-category {
+	margin:20px 0 0 0;
+}
+.reduced-flight-info-holder .reduced-flight-info-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info-right2.png) no-repeat right;
+}
+.reduced-flight-info-holder2 .reduced-flight-info-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info-right.png) no-repeat right;
+}
+.reduced-flight-info-holder, .reduced-flight-info-holder2 {
+	margin:20px 15px 0 15px;
+}
+.reduced-flight-info-holder .flight-all-info, .reduced-flight-info-holder2 .flight-all-info {
+	border-left:1px solid #e6e6e6;
+	border-right:1px solid #e6e6e6;
+	margin-top:0 !important;
+	*float:left;
+	*width:666px;
+}
+.reduced-flight-info-holder .flight-all-info .rooms-periods, .reduced-flight-info-holder2 .flight-all-info .rooms-periods {
+	margin:0 !important;
+	padding-top:10px;
+	*padding-top:0;
+}
+.reduced-flight-info-holder .flight-all-info .rooms-periods .rooms-period-item-line, .reduced-flight-info-holder2 .flight-all-info .rooms-periods .rooms-period-item-line {
+	padding:8px 0 !important;
+}
+.reduced-flight-info-holder .flight-all-info .rooms-periods .rooms-period-item-line:hover, .reduced-flight-info-holder2 .flight-all-info .rooms-periods .rooms-period-item-line:hover {
+	background-color:#fff !important;
+}
+.reduced-flight-info-holder .flight-all-info .rooms-periods .rooms-period-item-line .average-period-price, .reduced-flight-info-holder2 .flight-all-info .rooms-periods .rooms-period-item-line .average-period-price {
+	width:200px !important;
+	*width:180px !important;
+}
+.reduced-flight-info-holder .flight-all-info .rooms-periods .rooms-periods-item, .reduced-flight-info-holder2 .flight-all-info .rooms-periods .rooms-periods-item {
+	padding:0 10px 0 !important;
+	*padding:0 5px 0 !important;
+}
+.reduced-flight-info-holder-bottom {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info-holder-bottom.png) no-repeat left;
+	height:10px;
+	display:block;
+	position:relative;
+	*float:left;
+	*width:668px;
+}
+.reduced-flight-info-holder-bottom-right {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/reduced-flight-info-holder-bottom-right.png) no-repeat left;
+	height:10px;
+	width:50px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.item-line-last {
+	border-bottom:none;
+}
+.reduced-flight-info-holder .flight-all-info, .reduced-flight-info-holder .reduced-flight-info-holder-bottom {
+	display:none;
+}
+.reduced-flight-info-holder2 .flight-all-info, .reduced-flight-info-holder2 .reduced-flight-info-holder-bottom {
+	display:block;
+}
+.reduced-results-screen .more-results {
+	*margin-top:30px;
+}
+.matrix-holder {
+	margin:30px 15px 0;
+}
+.matrix-holder h2 {
+	color:#0F9400;
+	font-size:16px;
+	font-weight:bold;
+	display:inline-block;
+	*float:left;
+	*padding-top:3px;
+}
+.matrix-holder-header label {
+	display:inline-block;
+	font-size:12px;
+	color:#31353D;
+	margin-left:20px;
+}
+.matrix-holder-header label div.selector {
+	vertical-align: -8px;
+	width: 144px !important;
+}
+.matrix-holder-header label div.selector span {
+	width: 119px !important;
+	font-style:normal !important;
+}
+.matrix-holder-header label div.selector select {
+	min-width:151px !important;
+	*width:151px !important;
+}
+.matrix-table {
+	border-bottom:1px solid #7aba26;
+	text-align:center;
+	width:100%;
+	margin:15px 0;
+	border-collapse:collapse;
+}
+.matrix-table thead td {
+	border-bottom:2px solid #7aba26;
+	padding:5px 0;
+}
+.matrix-table td {
+	border:1px solid #7aba26;
+	border-bottom:none;
+	padding:15px 0;
+}
+.matrix-table td a {
+	color:#CC0000;
+	font-size:13px;
+	font-weight:bold;
+	display:block;
+}
+.matrix-table td a:hover {
+	text-decoration:underline;
+}
+.matrix-table td.first-col {
+	border:1px solid #7aba26;
+	border-bottom:1px solid #7aba26;
+	background-color:#bee78d;
+	color:#31353D;
+	font-size:13px;
+	font-weight:bold;
+}
+.matrix-table-th-empty {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/bg-matrix-table-th-empty.gif);
+}
+.matrix-table-category {
+	color:#31353D !important;
+	font-size:12px;
+	font-weight:bold;
+	padding:10px 0;
+	background-color:#fff !important;
+}
+.matrix-table-category a {
+	color:#0081BB !important;
+	font-weight:normal !important;
+	display:block;
+	margin-top:5px;
+	padding:0 !important;
+	background:none !important;
+	text-decoration:underline;
+}
+.matrix-table-category a:hover {
+	text-decoration:none;
+}
+.matrix-table-best-price {
+	background:#ecf5f9 url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/backgrounds/matrix-table-td-a-hover.png) no-repeat top left;
+	color:#0182BC !important;
+}
+.map-search-results .flight-details {
+	border-bottom:1px dotted #ccc;
+	padding-bottom:30px;
+	padding-top:10px;
+	*clear:both;
+	*padding-bottom:110px;
+}
+.map-search-results .flight-main-details h3 span {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/map-search-results-flight-title-number.png) no-repeat;
+	width:18px;
+	height:17px;
+	padding-top:2px;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	font-size:12px;
+	display:inline-block;
+	margin-right:5px;
+	vertical-align:2px;
+	*vertical-align:0;
+}
+.the-map {
+	margin:0 10px 25px;
+}
+.map-search-results .flight-all-info {
+	margin-top:25px !important;
+	*margin-top:5px !important;
+}
+.flight-facilities ul {
+	width:675px;
+}
+.flight-facilities ul li {
+	float:left;
+	width:225px;
+}
+.flight_details .flight-description h3, 
+.flight_details .flight-facilities h3, 
+.flight_details .flight-rooms-periods h3, 
+.total-price h3, 
+.payment-method h3, 
+.billing-address h3, 
+.passanger-details h3,
+.PaxInfo h3,
+.fancybox-skin h3{
+	color:#3A3A38;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.flight_details .flight-description, .flight_details .flight-facilities, .flight_details .flight-rooms-periods {
+	margin:30px 10px 0;
+	clear:both;
+}
+.flight_details .flight-description p {
+	color:#333;
+	font-size:13px;
+	line-height:1.4;
+}
+.flight_details .flight-facilities ul {
+	list-style-image:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/more-details-module-bullet.png);
+	list-style-position:inside;
+	*list-style-image:none;
+	*list-style-position:outside;
+}
+.flight_details .flight-facilities ul li {
+	color:#333;
+	font-size:12px;
+	line-height:2.4;
+	*background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/more-details-module-bullet.png) no-repeat left 7px;
+	*padding-left:22px;
+}
+.flight_details .rooms-periods {
+	margin:0 !important;
+}
+.check-availability {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/buttons/check-availability.png) no-repeat;
+	width:218px;
+	height:32px;
+	display:block;
+	*margin:0 auto;
+	vertical-align:-11px;
+	float:left;
+}
+.check-availability-r-go-back {
+	font-size:13px;
+	color:#31343D;
+	text-align:center;
+	margin:40px auto 0;
+}
+.check-availability-r-go-back a {
+	color:#333;
+	text-decoration:underline;
+}
+.check-availability-r-go-back a:hover {
+	text-decoration:none;
+}
+#ContentPlaceHolder1_wucFlightReserve_chkContract1 
+{
+    vertical-align:-2px;
+}
+.flight-picture-gallery {
+	padding:0 0 0 4px;
+	background:none !important;
+}
+.flight-picture-gallery a img {
+	margin:4px;
+}
+.flight-picture-gallery a:hover img {
+	opacity:0.7;
+}
+.flight_details .rooms-period-item-tab {
+	*width:600px;
+}
+.flight_details_map .flight-all-info, .flight_details_prices .flight-all-info {
+	margin-top:20px !important;
+}
+.flight_details_map .check-availability-r-go-back, .flight_details_prices .check-availability-r-go-back {
+	margin: 20px auto 0;
+	margin: 40px auto 0\9;
+}
+.flight-room-prices {
+	margin:0 15px;
+}
+.flight-room-prices h3 {
+	color:#333;
+	font-size:16px;
+	font-weight:bold;
+}
+.flight-room-prices table {
+	border-collapse:collapse;
+	width:100%;
+	margin:10px 0 30px;
+}
+.flight-room-prices table th {
+	background-color:#333;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	padding:4px 10px;
+}
+.flight-room-prices table th.first {
+	text-align:left;
+	padding-left:10px;
+}
+.flight-room-prices table th.last {
+	padding:4px 10px;
+}
+.flight-room-prices table td {
+	border:1px solid #f0f0f0;
+	padding:10px 5px;
+	font-size:11px;
+	color:#006B0E;
+	font-weight:bold;
+	text-align:center;
+}
+.flight-room-prices table td span {
+	display:block;
+	color:#333;
+	font-weight:normal;
+	text-decoration:line-through;
+	margin-bottom:5px;
+}
+.flight-room-prices table td.second {
+	text-align:left;
+	border-left:none;
+}
+.flight-room-prices table td.second span {
+	text-decoration:none;
+}
+.flight-room-prices table td.first {
+	border-right:none;
+}
+.flight-room-prices table td.last {
+	color:#333;
+	font-size:12px;
+	font-weight:bold;
+}
+.flight-room-prices table tr.selected td {
+	background-color:#f0f0f0;
+}
+.total-price-table {
+	font-size:13px;
+	color:#333;
+	width:100%;
+	border-collapse:collapse;
+}
+.total-price-table td {
+	border:1px solid #BABAB9;
+	padding:8px 15px;
+	white-space:nowrap;
+}
+.total-price-room a {
+	display:block;
+	font-size:11px;
+	color:#0081BB;
+	text-decoration:underline;
+	margin-top:3px;
+}
+.total-price-room a:hover {
+	text-decoration:none;
+}
+.total-price-room {
+	border-right:none !important;
+}
+.total-price-was {
+	text-decoration:line-through;
+	border-right:none !important;
+	border-left:none !important;
+}
+.total-price-is {
+	border-left:none !important;
+	text-align:right;
+}
+.total-price-value-title, .total-price-value-empty, .total-price-value {
+	background-color:#f0f0f0;
+	font-weight:bold;
+}
+.total-price-value-title {
+	border-right:none !important;
+}
+.total-price-value-empty {
+	border-right:none !important;
+	border-left:none !important;
+}
+.total-price-value {
+	border-left:none !important;
+	text-align:right;
+}
+.total-price-total-empty {
+	border:none !important;
+}
+.total-price-total {
+	text-align:right;
+	background-color:#BABAB9;
+	color:#fff;
+	border:none !important;
+	font-size:14px;
+}
+.total-price h3 {
+	clear:both;
+}
+.payment-method-card-selection {
+	margin-top:20px;
+	*float:left;
+	*width:670px;
+}
+.payment-method-card-selection label {
+	font-weight:bold;
+	display:inline-block;
+	*float:left;
+	margin-right:10px;
+    margin-bottom: 10px;
+}
+.payment-method-card-selection ul {
+	list-style:none;
+	display:inline-block;
+	*float:left;
+	vertical-align:8px;
+}
+.payment-method-card-selection li {
+	display:inline-block;
+	*float:left;
+	margin-right:7px;
+}
+.payment-method-card-selection li.selected {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/payment-method-card-selection.gif) no-repeat bottom;
+	height:50px;
+}
+.payment-method-card-selection li a {
+	width:48px;
+	height:30px;
+	display:inline-block;
+	*float:left;
+}
+.payment-method-card-selection li.visa-card a {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/card-visa.gif) no-repeat;
+}
+.payment-method-card-selection li.master-card a {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/card-master.gif) no-repeat;
+}
+.payment-method-card-selection li.amex-card a {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/card-amex.gif) no-repeat;
+}
+.payment-method-card-selection li.paypal-card a {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/card-paypal.gif) no-repeat;
+	width:47px !important;
+}
+.security-info {
+	color:#999;
+	font-size:12px;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icons/cadeado.gif) no-repeat right;
+	padding-right:20px;
+	padding-top: 2px;
+	text-decoration:underline;
+	text-align: right;
+    width: 280px;
+	display:inline-block;
+	*float:right;
+}
+.security-info:hover {
+	text-decoration:none;
+}
+.payment-method-card-form {
+	background-color:#f0f0f0;
+	border:1px solid #BABAB9;
+	padding:20px 10px;
+}
+.payment-method-card-form .form-item span, .billing-address-form .form-item span {
+	margin-bottom:2px;
+}
+
+.form-item.card-number {
+    margin-right: 0 !important;
+}
+
+.payment-method-card-form .form-item input {
+	font-size:13px !important;
+}
+.payment-method-card-form .form-item {
+	display:inline-block;
+}
+.payment-method-card-form > div {
+    margin-right: 1%;
+    margin-bottom:10px;
+    width: 32%;
+}
+.card-expiration-date *
+{
+    display:inline !important;
+}
+.card-expiration-date label, .card-expiration-date label span 
+{
+    display:block !important;
+}
+.payment-method-card-form .card-expiration-date input.card-expiration-date-month {
+	width:30px !important;
+}
+.payment-method-card-form .card-expiration-date input.card-expiration-date-year {
+	width:50px !important;
+}
+.payment-method-card-form .card-expiration-date span {
+	font-size:12px;
+}
+.payment-method-card-form .card-security-code input {
+	width:40px !important;
+}
+.payment-method, .billing-address {
+	margin-top:40px;
+}
+.payment-method, .billing-address .form-item input {
+	font-size:13px;
+}
+.billing-address, .billing-address .form-item {
+	*float:left;
+}
+.billing-address .billing-address-complete-address input, .billing-address .billing-address-email input {
+	width:240px;
+}
+.billing-address .billing-address-zip-code input {
+	width:75px;
+}
+.billing-address-telephone-area {
+	width:25px;
+}
+.billing-address-telephone-number {
+
+}
+.payment-method, .billing-address .form-item .selector {
+	vertical-align: -8px !important;
+}
+.payment-method, .billing-address .form-item .selector span {
+	font-style:normal !important;
+	font-size:13px !important;
+}
+.billing-address-state .selector {
+	width:50px !important;
+}
+.billing-address-state .selector span {
+	width:25px !important;
+}
+.billing-address-state .selector select {
+	min-width:58px !important;
+	*width:58px !important;
+}
+.billing-address-city .selector {
+	width:110px !important;
+}
+.billing-address-city .selector span {
+	width:85px !important;
+}
+.billing-address-city .selector select {
+	min-width:118px !important;
+	*width:118px !important;
+}
+.confirm-reservation {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/WTX.Fox/images/icones/bt-laranja.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #EF8C02;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 5px;
+    margin:20px 0;
+}
+.field-legs {
+}
+.field-legs label {
+}
+#advanced-search {
+	display:none;
+}
+#advanced-search-action {
+	font-size:11px;
+	text-decoration:underline;
+}
+#advanced-search-action:hover {
+	text-decoration:none;
+}
+.flight-main-details table {
+	width:99%;
+}
+.flight-main-details table td {
+	text-align:left;
+	color:#333;
+	vertical-align:top;
+    *width:150px;
+}
+.flight-main-details table td strong {
+	display: block !important;
+    font-size: 17px !important;
+	line-height:normal !important;
+    margin: 5px 0 !important;
+	color:#3A3A38;
+}
+.themes-b .more-details-social-module .flight-main-details table td strong span 
+{
+    font-size: 17px !important;
+    margin: 5px 0 !important;
+    font-weight: bold !important;
+}
+#principalMatrix{
+	margin:auto;
+}
+.flight-main-details table th {
+	font-size:11px;
+	font-weight:normal;
+	color:#999;
+	text-align:left;
+}
+.td-align-left {
+	text-align:left !important;
+}
+.td-align-right {
+	text-align:right !important;
+}
+.flight-class {
+	color:#666 !important;
+	text-align:left !important;	
+	padding-left:2px;
+	padding-top:10px;
+	display:block;
+}
+.flight-more-info {
+	font-size:11px;
+}
+.link-print, .link-mail, .link-more-info {
+	display:inline-block;
+	*float:right;
+	overflow:hidden;
+	line-height:30;
+	margin-left:4px;
+	margin-right:1px;
+	*margin-left:8px;
+	margin-top:0;
+}
+.flight-aditional-infos {
+	color:#666 !important;
+}
+.flight-time {
+	font-size:15px;
+	font-weight:bold;
+}
+.link-print {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/ico-print.png) no-repeat;
+	width:16px;
+	height:15px;
+}
+.link-mail {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/ico-mail.png) no-repeat;
+	width:16px;
+	height:15px;
+	margin-left: 25px !important;
+	*clear:both;
+	display:none;
+}
+.link-more-info {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/ico-mais-info.png) no-repeat;
+	width:51px;
+	height:15px;
+}
+.flight-more-info-table {
+	width:100%;
+	font-size:12px;
+	color:#333;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #BABAB9;
+	margin-bottom: 15px;
+}
+.flight-more-info-table td {
+	vertical-align:top;
+	line-height: 1.8;
+	*padding:5px 0;
+}
+.flight-more-info-table td label {
+	font-weight:bold;
+}
+.flight-more-info-logo {
+}
+
+	.flight-more-info-type {
+		width: 130px;
+	}
+	
+	.flight-more-info-departure, .flight-more-info-Arrival {
+		width: 220px;
+	}
+	
+
+#TripMap .flight-more-info-logo {
+    padding-right: 10px;
+}
+
+	#TripMap .flight-more-info-table{
+		width:520px !important;
+	}
+
+
+	#TripMap .flight-more-info-logo {
+		padding-right: 10px;
+		width: 50px !important;
+	}
+	
+	
+	#TripMap .flight-more-info-table td {
+		padding-right: 10px;
+		width: 150px;
+	}
+	
+	#TripMap .flight-more-info-table td label{
+		display:block;
+	}
+
+.flight-details-pictures img {
+	background-color: #FFFFFF;
+    border: 1px solid #ddd !important;
+    padding: 20px 30px;
+}
+.flight-more-info-logo img {
+	background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.selection-details img {
+	background-color: #FFFFFF;
+    border: 1px solid #DFE1E7;
+    padding: 5px;
+    margin-left: 10px;
+    overflow:hidden;
+}
+.the-matrix {
+	padding:10px 10px 0;
+	position:relative;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bg-matrix.jpg) no-repeat 10px 20px;
+	width:610px;
+	height:227px;
+    margin:auto;
+    overflow:visible !important;
+}
+.the-matrix ul {
+	list-style:none;
+	float:left;
+	width:101px;
+	margin-top:10px;
+}
+.the-matrix ul li {
+	height:31px;
+	text-align:center;
+	padding-top:16px;
+}
+.the-matrix ul li a {
+	color: #CC0000;
+    font-size: 13px;
+    font-weight: bold;
+}
+.the-matrix ul li a:hover {
+	text-decoration:underline;
+}
+.the-matrix ul li.the-matrix-first-row {
+	height:48px;
+	padding-top:13px;
+	overflow: hidden;
+}
+.the-matrix-first-col {
+	font-weight:bold;
+	color:#31353D;
+}
+.the-matrix .matrix-corner-TL, .the-matrix .matrix-corner-TR, .the-matrix .matrix-corner-BL, .the-matrix .matrix-corner-BR {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/corners-matrix-table.png) no-repeat;
+	width:10px;
+	height:10px;
+	position:absolute;
+}
+.the-matrix .matrix-corner-TL {
+	left: 10px;
+    top: 25px;
+	background-position:top left;
+}
+.the-matrix .matrix-corner-TR {
+	right: 10px;
+    top: 25px;
+	background-position:top right;
+}
+.the-matrix .matrix-corner-BL {
+	bottom: 15px;
+	bottom:0\9;
+	*bottom: 15px;
+    left: 10px;
+	background-position:bottom left;
+}
+.the-matrix .matrix-corner-BR {
+	bottom: 15px;
+	bottom:0\9;
+	*bottom: 15px;
+    right: 10px;
+	background-position:bottom right;
+}
+.the-matrix h2 {
+	letter-spacing:-0.05em;
+	color:#333;
+	font-size:17px;
+	margin: 15px 0 5px;
+	border-bottom: 1px solid #DFE1E7;
+	padding-bottom:5px;
+}
+.the-matrix-last-line {
+    background: #fff;
+    border: 1px solid #bababa;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: -1px;
+    width: calc(100% - 2px);
+}
+.the-matrix-last-line ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.the-pagination {
+	display:block;
+	clear:both;
+	padding:10px 22px 30px;
+}
+.the-pagination ul {
+	display:table;
+	clear:both;
+	list-style:none;
+	width:100%;
+}
+.the-pagination ul li {
+	display:table-cell;
+	text-align:center;
+	*width:80%;
+	*float:left;
+}
+.the-pagination ul li.pagination-previous {
+	text-align:left;
+	*width:10%;
+}
+.the-pagination ul li.pagination-next {
+	text-align:right;
+	*width:10%;
+}
+.the-pagination ul li a {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgPaginacao.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #B7B7B7;
+    border-radius: 4px 4px 4px 4px;
+    color: #58595B;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 6px;
+    width:auto !important;
+    height:auto !important;
+    padding: 4px 10px !important;
+    text-decoration: none;
+	font-size: 12px;
+}
+.the-pagination ul li a:hover, .the-pagination ul li span.pagination-selected a {
+	background-position: 0 -41px;
+    color: #588FC4;
+}
+.the-pagination ul li span {
+	display: inline;
+	*display:inline-block;
+	*width:25px;
+	margin:0 2px;
+	*margin:0 auto;
+}
+.the-pagination .pagination-label {
+	text-align:center;
+	display:block;
+	clear:both;
+	color:#999;
+	font-size:11px;
+	margin-top:10px !important;
+}
+.selection-details-ida {
+}
+.sidebar .selection-details {
+	color:#666;
+	font-size:11px !important;
+	margin: 0 8px;
+}
+
+#divCompanie .selection-details {
+    margin-bottom: 20px;
+}
+
+.selection-details-total-price {
+    width: 185px;
+}
+
+.selection-details-left-col {
+	float:left;
+	width:70px;
+	text-align:left;
+	font-size:10px;
+	color:#999;
+	line-height:1;
+}
+.selection-details-left-col span {
+	margin-top:5px;
+	display:block;
+	padding-left:3px;
+}
+.sidebar .selection-details-right-col {
+	float:left;
+	width:110px;
+	margin-left:5px;
+	line-height:1.38 !important;
+}
+.selection-details-right-col label {
+	color:#00468C;
+	display:block;
+}
+.selection-details-right-col span {
+	margin-bottom:5px;
+	display:block;
+}
+.selection-details-holder .reserve-button {
+    float: right;
+    margin: 20px 10px 20px 0 !important;
+    width: 99px !important;
+}
+#collapse-matrix {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/minimizar-matriz.png) no-repeat 0 0;
+	width:70px;
+	height:17px;
+	position:absolute;
+	bottom:-2px;
+	left: 50%;
+    margin-left: -35px;
+}
+#collapse-matrix:hover {
+	background-position:0 -17px;
+}
+#reopen-matrix {
+	background:url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details.png") no-repeat 0 0;
+	border-right: 1px solid #babab9;
+	height:23px;
+	display:block;
+	font-size: 12px;
+    font-weight: bold;
+	color:#333;
+	padding: 2px 0 0 25px;
+	display:none;
+	margin: 30px 10px 0 10px;
+	color:#8C8E90 !important;
+	text-decoration:none;
+}
+.remove-flight {
+	position:absolute;
+	top:2px;
+	right:-165px;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/btn-remover.png) no-repeat;
+	width:49px;
+	height:13px;
+	line-height:30;
+	overflow:hidden;
+}
+.remove-flight:hover {
+	background-position:0 -13px;
+}
+
+#divFlightSelected_1 .remove-flight{
+	right:-150px !important;
+}
+
+.clean-filters {
+	position:absolute;
+	top:15px;
+	right: 15px;
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/btn-limpar.png) no-repeat;
+	width:49px;
+	height:13px;
+	line-height:30;
+	overflow:hidden;
+	text-indent:-999px !important;
+	overflow:hidden;
+}
+.clean-filters:hover {
+	background-position:0 -13px;
+}
+.flight-main-details a.select-button, .flight-main-details a.reserve-button {
+	margin: 20px 0 0px;
+}
+
+.send-flight-to-friend {
+	border:1px solid #c8edf9;
+	border-radius:10px;
+	background-color:#f1fafd;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	padding:20px;
+	margin:0 10px;
+	position:relative;
+	display:none;
+	*float:left;
+	*margin-bottom:20px;
+}
+.send-flight-to-friend table {
+	width:100%;
+}
+.send-flight-to-friend p {
+	color:#333;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.send-flight-to-friend table td {
+	padding:10px 10px 0 0;
+	color:#666;
+}
+.send-flight-to-friend-infos td label {
+	width:50px;
+	float:left;
+	padding-top:4px;
+}
+.send-flight-to-friend-infos td input {
+	width:245px;
+}
+.send-flight-to-friend-message label {
+	display:block;
+	padding-bottom:4px;
+}
+.send-flight-to-friend-message textarea {
+	width:613px;
+	height:60px;
+	margin-bottom:10px;
+}
+.send-flight-to-friend-message .send-button {
+	float:right;
+	margin-right:3px;
+	line-height: 30 !important;
+}
+.send-flight-to-friend-close {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/close-button.png) no-repeat;
+	width:19px;
+	height:19px;
+	position:absolute;
+	right: 19px;
+    top: 9px;
+	line-height:30;
+	overflow:hidden;
+}
+#send-flight-to-friend-close:hover {
+	text-decoration:underline;
+}
+
+/*# Botoes #*/
+
+.agrupador-fsx-resultados a.reserve-button {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/botoes.png) no-repeat !important;
+	background-position:0px -54px !important;
+	width:98px !important;
+	height:27px !important;
+	display:inline-block !important;
+}
+.agrupador-fsx-resultados a.reserve-button:hover {
+	background-position:0px -81px !important;
+}
+/*a.select-button, a.reserve-button {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/botoes.png) no-repeat;
+	background-position:0px -108px;
+	width:109px;
+	height:27px;
+	display:inline-block;
+}*/
+a.select-button, a.reserve-button{
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/WTX.Fox/images/icones/bt-laranja.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #EF8C02;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 29px !important;
+    padding: 0 5px;
+    text-align: center;
+    text-indent: 0 !important;
+    width: calc(100% - 10px) !important;
+    width: 100%
+}
+a.send-button,input.send-button {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/WTX.Fox/images/icones/bt-laranja.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #EF8C02;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+#dadosPagamentoHidden a {
+    vertical-align: baseline;
+}
+
+input.send-button{
+  cursor: pointer;
+}
+
+.the-matrix-nav {
+	position:absolute;
+	bottom:-10px;
+	right:22px;
+	font-size:10px;
+}
+.the-matrix-nav a {
+	background:none;
+	height:10px;
+	display:inline-block;
+	*float:left;
+	margin-left:5px;
+}
+a.the-matrix-nav-back {
+	width:43px;
+	background-position:0 0;
+}
+a.the-matrix-nav-forward {
+	width:29px;
+	background-position:-53px 0;
+}
+a.the-matrix-nav-back:hover {
+	background-position:0 -7px;
+}
+a.the-matrix-nav-forward:hover {
+	background-position:-53px -7px;
+}
+.payment-possibilities 
+{
+    clear: both;
+}
+.payment-possibilities span {
+	display:block;
+	font-size:11px;
+	color:#666;
+}
+.payment-possibilities span span {
+	display:inline;
+	font-size:13px;
+	color: #017701;
+	font-weight:bold;
+}
+.payment-possibilities .pay-poss-1row {
+	position: relative;
+    top: 5px;
+}
+.payment-possibilities .pay-poss-2row {
+	font-size:13px;
+	color: #333;
+}
+.payment-possibilities .pay-poss-3row {
+	font-size:10px;
+	color:#999;
+}
+.selection-details-left-col span {
+	margin-top:5px;
+	display:block;
+	padding-left:3px;
+	color: #00468C;
+}
+.selection-details-the-price {
+	color: #666 !important;
+	font-size:11px;
+}
+.selection-details-the-class {
+	color: #666 !important;
+	font-size:11px;
+}
+.selection-details-total-price h3 span {
+	color: #CC0000;
+	float:right;
+}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		.selection-details-total-price h3 span {float:none !important;}
+	}
+
+.selection-details-total-price h3 {
+	margin-bottom:0;
+}
+.pagination-disabled a, .pagination-disabled a:hover {
+	cursor:default !important;
+	color:#999 !important;
+	background-color: #F1F2F5 !important;
+}
+.passanger-details .passanger-details-name input, 
+.passanger-details .passanger-details-surename input {
+}
+
+.ie8 .passanger-details .passanger-details-name input, 
+.ie8 .passanger-details .passanger-details-surename input{
+}
+
+.ie9 .passanger-details .passanger-details-name input, 
+.ie9 .passanger-details .passanger-details-surename input,
+.ie10 .passanger-details .passanger-details-name input, 
+.ie10 .passanger-details .passanger-details-surename input{
+}
+
+.passanger-details .passanger-details-birthday input {}
+
+.passanger-details-name, 
+.passanger-details-surename, 
+.passanger-details-birthday,
+.passanger-details-sex,
+.passanger-details-redress,
+.passanger-details-doc,
+.payment-method-card-selection .card-number, 
+.payment-method-card-selection .card-expiration-date, 
+.payment-method-card-selection .card-security-code, 
+.payment-method-card-selection .document-card-owner{
+    float: left;
+    margin-right: 1%;
+    margin-bottom:5px;
+    width: 32%;
+}
+
+#payment1 .card-number,
+#payment2 .card-number{
+    margin-right: 1% !important;
+}
+
+#payment1 .card-expiration-date input,
+#payment2 .card-expiration-date input{
+    width: 35% !important;
+}
+
+.payment-method-card-selection .name-card-owner {
+    float: left;
+    margin-right: 1.5%;
+    width: 64.5%;
+}
+
+#payment1,
+#payment2{
+    background: #f0f0f0;
+    border: 1px solid #bababa;   
+    padding: 10px;
+}
+
+
+#payment1 label,
+#payment2 label{
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+#dvCards_1 {
+    margin-bottom: 10px;
+}
+
+.passanger-details {
+	margin-top:40px;
+}
+.passanger-details-remove a {
+	font-size:10px;
+	display:block;
+    clear: both;
+    width:70px;
+}
+.add-passanger {
+	font-size:11px;
+}
+.add-passanger:hover {
+	text-decoration:underline;
+}
+.passanger-details-remove a:hover {
+	text-decoration:underline;
+}
+select {
+	padding:2px;
+	vertical-align:-1px;
+}
+.passanger-details .form-item {
+	*float:left;
+}
+input[disabled="disabled"] {
+	color:#999 !important;
+	background:#f2f2f2 !important;
+	border:1px solid #ccc !important;
+}
+.flight-details-label, .themes-b .more-details-social-module .flight-details-label {
+	color: #999999 !important;
+    font-size: 11px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+}
+.flight-details-time {
+	font-size: 15px;
+    font-weight: bold;
+	color: #666666;
+}
+.flight-details-stops, .flight-details-duration {
+	color: #666666 !important;
+	display:block;
+	margin-bottom:10px;
+}
+
+/*Themes - B */
+
+.open-more-details {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/backgrounds/open-more-details.png") no-repeat scroll left center transparent;
+    clear: both;
+    color: #8C8E90 !important;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.content-module.more-details-opened.themes-b{
+	width:905px;
+}
+
+.themes-b .open-more-details,
+.themes-b .open-more-details:hover
+{
+    
+    margin:20px 0 0 0;
+}
+.themes-b .close-more-details
+{
+     
+ } 
+.themes-b .open-more-details span.open-more-details-right,
+.themes-b .open-more-details:hover span.open-more-details-right,
+.themes-b .close-more-details span.close-more-details-right
+{
+    
+}
+.themes-b .more-details-opened-content 
+{
+    
+}
+.themes-b .content-module {}
+.themes-b #MenosDetail,
+.themes-b #MaisDetail
+{
+    display:none;
+}
+.themes-b .more-details-opened-content .more-details-social-module{
+	padding:20px;
+}
+#panel2.more-details-social-module{
+	border-bottom: 1px solid #BABAB9;
+}
+.themes-b .content-module.more-details-opened{margin:0px 10px;}
+.flight-details-stops.themes-b{float: left; font-weight: normal;}
+.more-details-social-module h3 
+{
+    color: #3A3A38;
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+#dadosPagamentoHidden ul 
+{
+    list-style:none;
+}
+#dadosPagamentoHidden {
+    background-color: #F0F0F0;
+    border: 1px solid #BABAB9;
+    clear: both;
+    margin: 20px 0;
+    padding: 10px;
+    width: 200px;
+}
+#dadosPagamentoHidden label 
+{
+    font-weight:bold;
+    padding-bottom:10px;
+    display:block;
+}
+#dadosPagamentoHidden table td label
+{
+    font-weight:normal !important;
+    padding-bottom:0px !important;
+    display:inline !important;
+}
+.payment-method-card-selection table 
+{
+    display: table-cell;
+    margin: 5px 0;
+    width: 280px;
+}
+.payment-method-card-selection label, .payment-method-card-selection label input, .payment-method-card-selection label img
+{
+    vertical-align: middle;
+    margin-right:5px !important;
+}
+.sel_parcelamento label 
+{
+    font-weight:normal;
+}
+.sel_parcelamento table td 
+{
+    padding:0 10px 10px 0;
+}
+.sel_parcelamento table td input 
+{
+    float: left;
+    margin: 3px 5px 0 0 !important;
+}
+.linkinho {
+    font-size: 11px;
+    margin-top: 10px;
+}
+.payment-method-card-form .form-item .card-expiration-date-post-label
+{
+    font-size:11px !important;
+    font-weight:normal !important;
+    margin-left:5px !important;
+    color: #999999 !important;
+}
+.lk-correios 
+{
+    font-size:11px;
+    font-weight:normal;
+	float: right;
+	*float:none;
+    margin-top: 0;
+}
+.lk-correios:hover 
+{
+    text-decoration:underline;
+}
+.open-map-link {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/google_maps.png) no-repeat left;
+	display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 20px;
+	color:#999;
+}
+.open-map-link:hover {
+	text-decoration:underline;
+}
+
+.billing-address-email{
+    margin-right:0 !important;
+}
+
+    .billing-address-FullName input,
+    .billing-address-email input{
+    }
+
+.themes-b .more-details-social-module span
+{
+    font-weight: normal !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    vertical-align: bottom !important;
+}
+#divDayPeriod input 
+{
+    vertical-align:-2px !important;
+}
+.selection-details *
+{
+    vertical-align:middle !important;
+}
+#contrato-modal-content, #servico-modal-content {
+    background-color: #F7F7F7;
+    border: 10px solid #DDDDDD;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    height: 300px;
+    left: 50%;
+    line-height: 1.4;
+    margin: -200px 0 0 -290px;
+    overflow: auto;
+    padding: 40px;
+    position: fixed;
+    top: 50%;
+    width: 500px;
+	z-index:99 !important;
+}
+#contrato-modal-content h3, #servico-modal-content h3 {
+    font-size: 16px !important;
+    margin: 0 0 2px !important;
+}
+#contrato-modal-content .modal-close, #servico-modal-content .modal-close {
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    *right: 20px;
+    top: 10px;
+}
+#contrato-modal-content .contratoTexto, #servico-modal-content .contratoTexto {
+    color: #666666;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 20px;
+}
+#MenosVoo 
+{
+    margin-top:-17px;
+    *margin-top:0px;
+}
+.passanger-details .form-item 
+{
+    *height:50px;
+}
+.addPassageiro 
+{
+    *clear:both;
+}
+.billing-address-complete-address 
+{
+ *clear:both;
+ margin-top:30px;
+}
+.billing-address-complete-address br 
+{
+    *clear:both;
+}
+.billing-address-the-address input
+{
+}
+
+.msgTipoTarifa {
+    clear: both;
+    margin: 0 20px 20px;
+    width: auto;
+}
+
+#ContentPlaceHolder1_wucFlightReserve_pnlPax input 
+{
+    *margin-left:-10px;
+}
+.confirmation-code{
+    background: #FFF;
+    border: 1px solid #BBB;
+    float: right;
+    margin: 15px 20px 0 0;
+    padding: 12px;
+    text-align: center;
+    width: 230px;
+}
+.confirmation-code span {
+    color: #3A3A38;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.confirmation-client-text {
+   margin: 20px 0 0 20px;
+}
+
+#ContentPlaceHolder1_wucFlightConfirmReserve_lblPnrCode {
+    clear:both;
+}
+.total-price {
+	margin:0;
+}
+.main-content-confirmation .total-price{
+	clear: both;
+    margin: 0 20px 20px;
+    width: auto;
+}
+#ContentPlaceHolder1_wucFlightConfirmReserve_rptPassenger_lblPassenger_0 
+{
+    display:block;
+    margin-bottom: 10px;
+}
+#ContentPlaceHolder1_wucFlightConfirmReserve_topoReserva .main-content 
+{
+    width: 850px;
+}
+ /* modal detalhe do voo */
+ .modalVoos {  
+     position:fixed;  
+	 height:610px;
+     width:900px;
+	 margin-top:-305px !important;
+	 margin-left:-450px !important;
+	 top:50% !important;
+	 left:50% !important;
+     display:none;  
+     z-index:9999999;  
+     padding:20px;  
+     background-color:white;
+ }
+#mask 
+{  
+    position:fixed;  
+    left:0;  
+    top:0;  
+    z-index:8888888;  
+    background-color:#000;  
+    display:none;
+}
+#modalDetalheVoo h2.tt-detalhesVoo
+{    
+    float: left;    
+    margin: 2px 0 0;
+}
+#modalDetalheVoo a.close
+{    
+    float: right;
+}
+#modalDetalheVoo a.close:link
+{    
+    background-image: url('https://tempsite139.travelexplorer.com.br/img/btnFecharModal.gif');    
+    background-repeat:no-repeat;    
+    background-position: 0 0;    
+    width: 60px;    
+    height: 25px;
+}
+#modalDetalheVoo a.close:visited
+{    
+    background-image: url('https://tempsite139.travelexplorer.com.br/img/btnFecharModal.gif');    
+    background-repeat:no-repeat;    
+    background-position: 0 0;    
+    width: 60px;    
+    height: 25px;
+}
+#modalDetalheVoo a.close:hover    
+{
+    background-image: url('https://tempsite139.travelexplorer.com.br/img/btnFecharModal.gif');    
+    background-position: 0 -25px;    
+    background-repeat:no-repeat;    
+    width: 60px;    
+    height: 25px;
+}
+#modalDetalheVoo a.close:active
+{    
+    background-image: url('https://tempsite139.travelexplorer.com.br/img/btnFecharModal.gif');    
+    background-position: 0 -25px;    
+    background-repeat:no-repeat;    
+    width: 60px;    
+    height: 25px;
+}
+ .btImprimirReserva 
+ {
+    background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/ico-print.png) no-repeat;
+	width:16px;
+	height:15px;
+	display:none !important;
+	overflow:hidden;
+	line-height:30;
+	cursor:pointer;
+	margin-top:10px;
+ }
+ 
+#TripMap p {margin:0 0 20px; font-weight:normal; color:#555;}
+#TripMap p span 
+{
+    font-weight:normal; color:#555;
+}
+#TripMap .City, #TripMap .City span { font-size: 17px; margin-bottom:0;}
+#TripMap .Airport { margin-top:0}
+#TripMap span { font-weight:bold; font-size:13px; color:#444;}
+#TripMap 
+{
+    width:910px; margin:auto;
+}
+#map 
+{
+    float:left;width:680px; height:600px; border:1px solid #666;
+}
+
+.regular-search-results .flight-details
+{
+    border-bottom: 1px solid #ababaa;
+    padding-bottom: 25px;
+    margin: 0 22px 15px !important;
+}
+
+#modal .divmap img 
+{
+    background-color: #FFFFFF;
+    border: 1px solid #DFE1E7;
+    margin: 0 0 10px;
+    padding: 20px;
+}
+#modal .divmap 
+{
+    color:#666;
+    float:right; width:200px; height:580px; padding:10px;
+}
+#modal 
+{
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#mask 
+{
+    opacity: 0.5 !important;
+}
+.matrix-icon-best-price 
+{
+}
+.selection-details span 
+{
+    padding-left:5px;
+}
+#outputInt a.reserve-button 
+{
+    width: 110px !important;
+}
+
+/*Selecao filtros horarios*/
+.day-hour-range-morning, .day-hour-range-afternoon, .day-hour-range-night, .day-hour-range-morning-2, .day-hour-range-afternoon-2, .day-hour-range-night-2 {
+	width:auto;
+	*width:40px;
+	display:inline-block;
+	*float:left;
+	text-align:center;
+	margin:0 9px;
+	outline:none;
+}
+.day-hour-range-morning .day-hour-range-img, .day-hour-range-afternoon .day-hour-range-img, .day-hour-range-night .day-hour-range-img, .day-hour-range-morning-2 .day-hour-range-img, .day-hour-range-afternoon-2 .day-hour-range-img, .day-hour-range-night-2 .day-hour-range-img {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png) no-repeat;
+	display:block;
+	width:26px;
+	height:26px;
+	margin:auto;
+}
+.day-hour-range-morning .day-hour-range-img {
+	background-position:0px 0px;
+}
+.day-hour-range-afternoon .day-hour-range-img {
+	background-position:-26px 0px;
+}
+.day-hour-range-night .day-hour-range-img {
+	background-position:-52px 0px;
+}
+.day-hour-range-morning-2 .day-hour-range-img {
+	background-position:0px -26px;
+}
+.day-hour-range-afternoon-2 .day-hour-range-img {
+	background-position:-26px -26px;
+}
+.day-hour-range-night-2 .day-hour-range-img {
+	background-position:-52px -26px;
+}
+.day-hour-range-morning .day-hour-range-label, .day-hour-range-afternoon .day-hour-range-label, .day-hour-range-night .day-hour-range-label, .day-hour-range-morning-2 .day-hour-range-label, .day-hour-range-afternoon-2 .day-hour-range-label, .day-hour-range-night-2 .day-hour-range-label {
+	display:block;
+	font-size:11px;
+	color:#666;
+}
+.day-hour-range-morning .day-hour-range-label span, .day-hour-range-afternoon .day-hour-range-label span, .day-hour-range-night .day-hour-range-label span, .day-hour-range-morning-2 .day-hour-range-label span, .day-hour-range-afternoon-2 .day-hour-range-label span, .day-hour-range-night-2 .day-hour-range-label span {
+	display:block;
+	font-size:10px;
+	color:#999;
+	letter-spacing:-0.05em;
+}
+
+.btnCloseModalGoogle a
+{
+    background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/btn-fechar.png) no-repeat;
+    width:32px;
+    height:27px;
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    line-height:30;
+    overflow:hidden;
+}
+#divMsgBack p, #divMsgGo p
+{
+    background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bg-selecione-voo.png) no-repeat;
+    width:160px;
+    height:20px;
+    color:#333;
+    font-size:12px;
+    padding:6px 0 0 30px;
+    display:block;
+}
+#openVoo .flight-details 
+{
+    border-bottom: medium none !important;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/*Ajustes no slider*/
+.ui-slider-horizontal .ui-slider-range {
+    height: 7px !important;
+}
+.bt-slider-esq, .ui-slider-handle-esquerda, .bt-slider-dir, .ui-slider-handle-direita, .ui-slider-handle
+{
+    position:absolute;
+}
+.slider-range, #slider-range 
+{
+    position:relative;
+    height: 7px;
+    width: 90%;
+}
+.ui-slider-horizontal .ui-slider-range 
+{
+    position: absolute;
+}
+.barra-preco 
+{
+    margin-left: 0 !important;
+}
+.alertaErro     
+{
+    border-radius: 10px 10px 10px 10px;    
+    -moz-border-radius: 10px 10px 10px 10px;    
+    -webkit-border-radius: 10px 10px 10px 10px;    
+    background-color: #fff7af;    
+    border: 1px solid #f3d405;    
+    color: #333;    
+    display: block;    
+    margin: 20px;    
+    padding: 20px;    
+}
+#errorMessage     
+{
+    border-radius: 10px 10px 10px 10px;    
+    -moz-border-radius: 10px 10px 10px 10px;    
+    -webkit-border-radius: 10px 10px 10px 10px;    
+    background-color: #fff7af;    
+    border: 1px solid #f3d405;    
+    color: #333;    
+    display: block;       
+    padding: 20px;    
+}
+.alertaErro ul 
+{    
+    list-style: none;
+}
+.FieldErro 
+{    
+    background: #fff7af !important;    
+    border: 1px solid #f3d405 !important;    
+    color: #333 !important;
+}
+
+.send-flight-to-friend-error {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    background: none repeat scroll 0 0 #FFF7AF !important;
+    border: 1px solid #F3D405 !important;
+    color: #333333 !important;
+    padding: 10px 15px;
+    width: 590px;
+}
+.send-flight-to-friend-error label {
+display:block;
+}
+
+.selection-details-right-col label, .selection-details-left-col span {
+color:#333 !important;
+}
+#divAirportGo .check input, #divAirportBack .check input {
+margin-left: -18px;
+}
+#divAirportGo label, #divAirportBack label {
+margin-left: 18px;
+line-height: 1.2;
+margin-bottom: 10px;
+}
+.the-content input.text {
+	font-size: 13px !important;
+	font-family:Arial, Helvetica, sans-serif !important;
+}
+#MaisVoo {
+}
+.main-content-reservation .payment-method-card-form {
+	margin-bottom: 20px !important;
+}
+#h6Loading {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/carregando.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 10px;
+    height: 21px;
+    margin-bottom: 10px;
+    margin-left: 501px;
+    margin-top: 9px;
+    padding-left: 8px;
+    position: absolute;
+    width: 157px;
+    z-index: 99;
+}
+[id*="FlightReserve"] .content-module.total-price {
+	clear:both;
+}
+.flight-table-spacer {
+	*width:1px !important;
+}
+.regular-search-results .flight-all-info {
+	*float:left;
+}
+.regular-search-results .the-content {
+}
+.holder-reserve-screen .the-content {
+	*width:auto !important;
+}
+.holder-reserve-screen .content-module.more-details-closed.themes-b {
+	margin-top: 20px !important;
+}
+.holder-reserve-screen .form-item label {
+	*width:100%;
+}
+.holder-reserve-screen .content-module.passanger-details {}
+
+.holder-reserve-screen .the-content {}
+
+.holder-reserve-screen .td-align-left {}
+
+.payment-method-card-form .form-item label {}
+
+.content-module.billing-address-complete-address {}
+
+.lk-correios {}
+
+.holder-reserve-screen .more-details-opened-content {}
+
+.holder-reserve-screen .content-module.more-details-opened.themes-b {}
+
+.main-content-reservation{
+    background: #fff;
+}
+
+.main-content-confirmation .billing-address-form {
+    display: inline-block;
+    width: 100%;
+}
+
+.main-content-confirmation .form-item {
+    margin-right: 1% !important;
+    width: 32%;
+}
+
+.main-content-confirmation .form-item.passanger-details-birthday{
+    margin-right: 0 !important;
+}
+
+.billing-address-form > div {
+    width:100%;
+    margin-right:1%;
+    margin-bottom:2px;
+    display: inline-block;
+}
+
+#dvBillingPayment_1 > div,
+#dvBillingPayment_2 > div,
+#dvBillingPayment_3 > div{
+    width:31%;
+    margin-right:1%;
+    margin-bottom:2px;
+    display: inline-block;
+}
+
+#dvBillingPayment_1 label,
+#dvBillingPayment_2 label,
+#dvBillingPayment_3 label{
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+#dvBillingPayment_1,
+#dvBillingPayment_2,
+#dvBillingPayment_3{
+    background: #f0f0f0;
+    border: 1px solid #bababa;
+    padding: 10px;
+}
+
+#divCardBilling .billing-address-form > div{
+    width:31%;
+    margin-right:1%;
+    margin-bottom:10px;
+    display: inline-block;
+}
+
+    .billing-address-the-address {
+        margin-right: 0!important;
+        width: 64% !important;
+    }
+
+.main-content-reservation .form-item span, .main-content-confirmation .form-item span {
+	display:block;
+}
+.main-content-reservation .form-item select {
+	padding: 3px 3px 3px 5px !important;
+}
+#dadosPagamentoHidden table input {
+	border:none;
+}
+#dadosPagamentoHidden table {
+	vertical-align:middle;
+}
+[id*="FlightReserve_btnAdd"] {
+	float: left;
+    margin-right: 5px;
+    margin-top: -5px;
+	cursor:pointer;
+}
+.addPassageiro {
+	position:relative;
+}
+.billing-address-form .billing-address-state select 
+{
+    padding: 2px 3px 3px 5px !important;
+}
+.billing-address-form h3 {
+	clear: both;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+.main-content-reservation .main-content-bottom {
+	margin-left: -1px !important;
+	width: 980px !important;
+	margin-top: -15px !important;
+}
+.main-content-confirmation .main-content-bottom {
+	margin-left: 0px !important;
+	width: 980px !important;
+	margin-top: 0px !important;
+}
+
+.holder-reserve-screen .sidebar {
+    float: right;
+    width: 27%;  
+}
+    border-color: #E2E3E6;
+    border-style: solid;
+    border-width: 0 1px;
+}
+
+.main-content-reservation .the-content > div{
+	margin:20px 20px !important;
+}
+
+	.main-content-reservation .the-content .content-module.the-content-top{
+		margin:0 !important;
+	}
+
+.main-content-reservation .main-content-top, .main-content-confirmation .main-content-top{
+}
+
+.main-content-confirmation .passanger-details {
+    margin: 20px 20px !important;
+}
+.main-content-confirmation .the-content {
+	padding-bottom: 50px;
+}
+#tblOpcoesPagamento {
+}
+#openVoo {
+	margin:10px auto !important;
+}
+.main-content-reservation .billing-address-form .billing-address-zip-code input,
+.main-content-reservation .billing-address-form .billing-address-telephone input,
+.main-content-reservation .billing-address-form input[id*="txtNumber"],
+.main-content-reservation .billing-address-form input[id*="txtComplement"] {
+}
+.main-content-reservation .billing-address-form .billing-address-the-address input,
+.main-content-reservation .billing-address-form input[id*="txtDistrict"] {
+}
+
+.main-content-reservation .form-item.billing-address-state {
+}
+
+.main-content-reservation .form-item.billing-address-the-address {
+}
+
+    .main-content-reservation .billing-address-the-address input{
+    }
+
+.main-content-reservation .billing-address-city{
+}
+    
+    .main-content-reservation .billing-address-city input{
+    }
+
+    .ie9 .main-content-reservation .billing-address-city input,
+    .ie10 .main-content-reservation .billing-address-city input{
+    }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .main-content-reservation .billing-address-city input{
+    }
+}
+
+.subhome-voos .search-box .field-legs {
+	margin-bottom: 15px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.the-matrix .matrix-corner-BL {
+		bottom:0;
+		left: 10px;
+		background-position:bottom left;
+	}
+	.the-matrix .matrix-corner-BR {
+		bottom:0;
+		right: 10px;
+		background-position:bottom right;
+	}
+	.search-results-order .selector {
+		vertical-align: 0px;
+	}
+	.matrix-holder-header label div.selector {
+		vertical-align: 0px;
+	}
+	.field-more a {
+		vertical-align:-1px;
+	}
+	.payment-method, .billing-address .form-item .selector {
+		vertical-align: 0px !important;
+	}
+}
+
+#divInfoPerson > h3 {
+    display: block;
+}
+
+.content-module.payment-method > div {
+    display:inline-block;
+}
+
+
+/*.PagerNumberArea > span > a, .PagerNumberArea .SelectedPage, .PagerNumberArea .SelectedPrev, .PagerNumberArea .SelectedNext, #liPager span a {
+    height: auto !important;
+    width: auto !important;
+}*/
+
+
+/*ajustes tela de reserva nova*/
+.flight-info h3 
+{
+    
+}
+
+.flight-info ul.departureFlight 
+{
+    list-style: none;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.flight-info ul.arrivalFlight 
+{
+    list-style: none;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.flight-info ul > a 
+{
+    color: Blue;
+    text-decoration: none;
+}
+
+.flight-info ul > li {
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.flight-info ul > li.content {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sidebar .total-price {
+    margin: 0 !important;
+}
+
+.sidebar .total-price h3{}
+
+.sidebar .total-price-table td {
+    padding: 8px 5px;
+    white-space: nowrap;
+}
+
+.holder-reserve-screen .sidebar-item {
+    margin: 10px 15px;
+    padding: 0;
+    background: none;
+}
+
+.holder-reserve-screen .sidebar-item .total-price h3{
+    display: table-cell;
+}
+
+.holder-reserve-screen .sidebar-item .total-price .fancyboxCloseButton/*,
+.holder-reserve-screen .sidebar-item .departureFlight .fancyboxCloseButton,
+.holder-reserve-screen .sidebar-item .arrivalFlight .fancyboxCloseButton*/{
+    display: table-cell;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: underline;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.holder-reserve-screen .sidebar-item .departureFlight .fancyboxCloseButton,
+.holder-reserve-screen .sidebar-item .arrivalFlight .fancyboxCloseButton{
+    float:right;
+}
+
+.holder-reserve-screen .totalPriceResume {
+    width: 100%;
+}
+
+.holder-reserve-screen .sidebar .totalPriceResume .totalTickets, 
+.holder-reserve-screen .sidebar .totalPriceResume .totalTax, 
+.holder-reserve-screen .sidebar .totalPriceResume .totalPrice {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.holder-reserve-screen .sidebar .totalPriceResume .totalPrice {
+    color: #CF0000;
+}
+
+.holder-reserve-screen .sidebar #sidebarPaymentResume {
+    background: #F0F0F0;
+    padding: 2px 5px 5px;
+}
+
+.holder-reserve-screen .sidebar #sidebarPaymentResume .title {
+    display: block;
+    margin: 3px 0;
+}
+
+.holder-reserve-screen .sidebar #sidebarPaymentResume .paymentLogo, 
+.holder-reserve-screen .sidebar #sidebarPaymentResume .paymentType {
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+    .holder-reserve-screen .sidebar #sidebarPaymentResume .paymentLogo img {
+        margin-right: 10px;
+    }
+
+.holder-reserve-screen .sidebar #sidebarPaymentResume .paymentType, 
+.holder-reserve-screen .sidebar #sidebarPaymentResume .paymentMethod {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.holder-reserve-screen .sidebar #sidebarPaymentResume .title {
+    display: block;
+    margin: 3px 0;
+}
+
+.holder-reserve-screen .sidebar .flight-info {
+    border-top: 2px solid #BBBBBB;
+    display: inline-block;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+/*.holder-reserve-screen .sidebar .departureFlight .logo, 
+.holder-reserve-screen .sidebar .departureFlight .subtitle,
+.holder-reserve-screen .sidebar .departureFlight .lnkMoreDetailsDeparture, 
+.holder-reserve-screen .sidebar .arrivalFlight .logo, 
+.holder-reserve-screen .sidebar .arrivalFlight .subtitle,
+.holder-reserve-screen .sidebar .arrivalFlight .lnkMoreDetailsArrival {
+    display: table-cell;
+    vertical-align: middle;
+}*/
+
+/*.holder-reserve-screen .flight-info ul.departureFlight .logo > img,
+.holder-reserve-screen .flight-info ul.arrivalFlight .logo > img{
+    border: 1px solid #A3A3A3;
+    margin: 0 5px 5px 0;
+}*/
+
+/*.holder-reserve-screen .sidebar .departureFlight .subtitle, 
+.holder-reserve-screen .sidebar .arrivalFlight .subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    width: 105px;
+}*/
+
+.fancybox-skin {
+    border-radius: 0 !important;
+}
+
+#totalPriceDetails {
+    background: #FFF;
+    padding: 10px;
+}
+
+#totalPriceDetails > div {
+    background: #C3C3C3;
+    float: right;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+}
+
+.total-price-total {
+    background-color: #C3C3C3;
+    border: medium none !important;
+    color: #CF0000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#sidebarDepartureFlightDetails, 
+#sidebarArrivalFlightDetails {
+    background: #F0F0F0;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    padding: 10px;
+    width: 700px;
+    z-index: 9999;
+}
+
+.flight-more-info-logo-reserve {
+    text-align: center;
+    width: 100px;
+}
+
+.flight-more-info-type-reserve {
+    width: 149px;
+}
+
+.flight-more-info-departure-reserve,
+.flight-more-info-Arrival-reserve{
+    width: 287px;
+}
+
+.main-content-reservation .main-content-bottom {
+    margin: 0 -1px;
+}
+
+.main-content-reservation .payment-method, .billing-address {
+    border-top: 2px solid #BBBBBB;
+    margin: 15px;
+    padding-top: 5px;
+}
+
+.content-module.payment-method > #divPaymentOptionsB2B {
+}
+
+#divInfoPerson {
+    width:100%;
+    margin-top:15px;
+    padding-top: 5px;
+    border-top: 2px solid #BBBBBB;    
+}
+
+    #divInfoPerson .billing-address-FullName, 
+    #divInfoPerson .billing-address-email,
+    #divInfoPerson .billing-address-telephone,
+    #divInfoPerson .billing-address-Phone
+    {
+        width: 49%;
+        margin: 0 1% 0 0;
+        display:inline-block;
+    }
+    #divInfoPerson #divCellphone {
+      margin-right:0 !important;
+    }
+	
+		#divInfoPerson .billing-address-FullName input, #divInfoPerson .billing-address-email input{
+        }
+
+.main-content-reservation .passanger-details {
+    background: none repeat scroll 0 0 #F1F2F5;
+    border: 1px solid #A02A7E;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#divOpcoesPagamento {
+    float: right;
+    margin: 0 0 20px;
+    text-align: right;
+    width: 305px;
+}
+
+#divOpcoesPagamento label {
+    margin-bottom: 0 !important;
+    font-weight:bold;
+}
+
+#divOpcoesPagamento select {
+    width: 200px;
+}
+
+#divPaymentOptionsB2B input 
+{
+    margin: 0 5px 0 5px;
+}
+
+.payment-method-card-form .form-item input {
+    font-size: 13px !important;
+}
+
+.billing-address-the-address input {
+}
+
+.billing-address-form .billing-address-state select {
+    height: 29px !important;
+    width: 215px;
+}
+
+.content-module.dadosOperadora {
+    border-top: 2px solid #bbbbbb;
+    margin-top: 15px;
+    padding-top: 5px;
+    width: 100%;
+} 
+
+.dadosOperadora label.filial {
+    float: left;
+    margin-right: 2%;
+    width: 33%;
+}
+
+.dadosOperadora .operador {
+    float: left;
+    width: 33%;
+}
+
+.dadosOperadora h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#departureFlightDetails, #arrivalFlightDetails {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border: 1px solid #BABAB9;
+    border-radius: 5px 5px 5px 5px;
+    left: 50%;
+    margin-left: -350px;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    width: 700px;
+    z-index: 9999;
+}
+
+#departureFlightDetails .flight-more-info-logo-reserve {
+    text-align: center;
+    width: 100px;
+}
+
+.flight-info .lnkMoreDetailsDeparture,
+.flight-info .lnkMoreDetailsArrival {
+    color: #3A3A38;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.lnkClose {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/FO.FSX.Padrao/img/fancy_close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30;
+    overflow: hidden;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+}
+
+#dadosPagamentoHidden .send-button 
+{
+    border: none;
+}
+
+.main-content-reservation .passanger-details {
+
+    border: 1px solid #C3C3C3;
+    margin: 15px;
+    padding: 10px;
+}
+
+.content-module.observations {
+    margin: 15px;
+}
+
+.payment-method #divPaymentDescription,
+.payment-method #divPaymentOptionsB2B,
+.payment-method #divCardSelection,
+.payment-method #FinanceTypeText {
+    display:block;
+}
+
+.holder-reserve-screen .PaxInfo {
+    margin: 15px;
+}
+
+.PaxInfo h3{
+    display:block;
+    margin:0;
+}
+
+.passanger-details-tile {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#divCardSelection .serv_ad_tab {
+    float: left;
+}
+
+#divCardBilling {
+    width: 100%;
+}
+
+.send-mail-to-friend-success {
+    background: none repeat scroll 0 0 #FFF9B5;
+    margin: 0 0 0 5px;
+    padding: 5px;
+}
+
+
+.passanger-details-seat span input {
+    background: url("https://tempsite139.travelexplorer.com.br/App_Themes/WTX.Fox/images/icones/bt-laranja.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #ef8c02;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 9px;
+    text-align: center;
+	margin-top: 10px;
+}
+.billing-address-telephone-ddd, .telephone-ddd {
+    margin-right: 8px !important;
+    width: 35px !important;
+}
+.telephone-number {
+    width: 116px !important;
+}
+
+input.text-field.text.billing-address-telephone-ddd {
+    width: 35px !important;
+    margin-right:3px !important;
+}
+input.text-field.text.billing-address-telephone-number {
+    width: 110px !important;
+}
+/* ajustes para campos telefone e ddd da tela de pagto */
+.text-field.text.telephone-ddd {
+    width: 10% !important;
+}
+.text-field.text.telephone-number {
+    width: 40% !important;
+}
+
+/* box preços AFIP */
+span.price-obs {
+  display: inline-block;
+}
+span.resultado-voos-afip {
+  width: 152px;
+}
+
+.holder-resultado-voos-item-direita span.resultado-voos-afip span {
+  padding: 0;
+}
+span.resultado-voos-afip.total span.value {
+  font-size: 14px;
+  /*position: absolute;*/
+  right: 10px;
+}
+span.resultado-voos-afip span.label {
+    color: black;
+    font-size: 12px;
+}
+
+span.resultado-voos-afip span.value {
+    color: black;
+    white-space: nowrap;
+    font-size: 12px;
+}
+span.resultado-voos-afip-box span {
+  display: inline-block;
+}
+span.resultado-voos-afip.total {
+  border-top: 1px solid #000000;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+span.resultado-voos-afip.total span.label {
+width: 63px;
+height: 20px;
+overflow: hidden;
+padding-top: 4px;
+}
+span.resultado-voos-afip-box span:nth-child(3) span.label {
+width: 63px;
+height: 20px;
+overflow: hidden;
+padding-top: 4px;
+}
+/*span.resultado-voos-afip.total span.value::after {
+  content: 'ARS';
+  overflow: visible;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  font-size: 12px;
+}*/
+
+span.resultado-voos-afip {
+    padding: 0px 5px;
+}
+
+/* RESPONSIVO DA NOVA ATT */
+
+.holder-resultado-voos-item-direita span.value {
+  float: right;
+}
+.holder-resultado-voos-item-direita span.label {
+  float: left;
+  width: auto;
+  text-align: left;
+  color: #58595b;
+  font-size: 11px;
+}
+
+/*
+@media (min-width: 1400px) and (max-width: 1620px){
+  .holder-resultado-voos-item-direita span.value {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita span.label {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita span {
+    display: block;
+    text-aling: center;
+  }
+  
+}
+*/
+@media (min-width: 1024px) and (max-width: 1280px){
+  .holder-resultado-voos-item-direita span.value {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita span.label {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita .resultado-voos-item-o-preco-especificacao span {
+    display: block;
+    text-align: center;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .holder-resultado-voos-item-direita span.value {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita span.label {
+    float: none;
+  }
+  
+  .holder-resultado-voos-item-direita .resultado-voos-item-o-preco-especificacao span {
+    display: block;
+    text-align: center;
+  }
+  
+}
+
+/**Peso das bagagens */
+.info-peso-bagagem{
+	display: none;
+	border: 1px solid #cdcdcd;
+	border-radius: 2px;
+	padding: 5px;
+	padding-top: 15px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    margin-top: -90px;
+    box-shadow: 1px 1px 1px 1px #80808029;
+}
+.info-peso-bagagem .row{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.info-peso-bagagem .icon-bagagem{
+	display: block;
+	max-width: 25px;
+	margin-right: 5px;
+    height: 25px;
+    display: block;
+    float: left;
+    background-size: cover;
+    margin-right: 5px;
+    width: 25px;
+}
+.info-peso-bagagem strong{
+	font-size: 11.1px;
+	font-weight: 600;
+}
+.info-peso-bagagem p{
+	font-size: 11px;
+    margin-bottom: 0px;
+    width: 75%;
+    float: left;
+    line-height: 13px;
+}
+.group-info-peso-bagagem{
+	position: relative;
+    margin-top: 15px;
+
+}
+.group-info-peso-bagagem .btn-ver-detalhes-bagagem{
+	
+	display: inline-block;
+	width: 100%;
+}
+.group-info-peso-bagagem .btn-ver-detalhes-bagagem .icon-bagagem-btn{
+	background-size: 100%;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 5px;
+	display: block;
+}
+
+.group-info-peso-bagagem .btn-ver-detalhes-bagagem p{
+	/* float: left; */
+	/* display: inline-block; */
+	font-size: 11px;
+	font-weight: 600;
+  line-height: 13px;
+}
+.group-info-peso-bagagem:hover .info-peso-bagagem{
+	display: block;
+}
+.info-peso-bagagem .info-peso-bagagem{
+    font-size: 9px;
+    float: right;
+}
+
+/* Minification failed (line 3170, error number 1019): Unexpected token, found '}' */

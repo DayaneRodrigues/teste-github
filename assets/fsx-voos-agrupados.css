@@ -1,0 +1,523 @@
+/* ================ Início dos estilos dos novos resultados agrupados ================ */
+
+.holder-resultado-voos-item {
+	border-bottom:2px solid #bfbfbf;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	display:table;
+	width:100%;
+}
+.holder-resultado-voos-item-esquerda {
+	display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 475px;
+	vertical-align:top;
+    font-size: 13px;
+}
+.holder-resultado-voos-item-direita {
+	display:table-cell;
+	vertical-align:top;
+}
+.regular-search-results .flight-details {
+    border-bottom: medium none;
+    margin: 0 10px 15px !important;
+    padding-bottom: 0;
+}
+.resultado-voos-item-perna-cabecalho {
+	display:table;
+	width:100%;
+	margin-bottom:7px;
+}
+.resultado-voos-item-perna-cabecalho h6 {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat;
+	height:21px;
+	padding-left:45px;
+	font-weight:bold;
+	font-size:15px;
+	letter-spacing:-0.05em;
+	line-height:1.5;
+	display:block;
+	width:45px;
+}
+.resultado-voos-item-perna-cabecalho-ida h6 {
+	background-position:0 0;
+}
+.resultado-voos-item-perna-cabecalho-volta h6 {
+	background-position:0 -21px;
+}
+.resultado-voos-item-perna-cabecalho-titulo {
+	display:table-cell;
+	width:90px;
+}
+.resultado-voos-item-perna-cabecalho-data {
+	display:table-cell;
+    vertical-align: bottom;
+	width:80px;
+}
+.resultado-voos-item-perna-cabecalho-cidades {
+	display:table-cell;
+    vertical-align: bottom;
+	width:310px;
+}
+.resultado-voos-item-perna-trechos {
+	margin-bottom:15px;
+	border-bottom:1px dotted #ccc;
+	padding-bottom:5px;
+}
+.resultado-voos-item-perna-trechos-o-trecho {
+	background:#f0f0f0;
+	display:table;
+	width:100%;
+	margin-bottom:3px;
+	color:#58595b;
+	font-size:12px;
+	position:relative;
+	vertical-align:middle;
+}
+.resultado-voos-item-perna-trechos-o-trecho > span {
+    border-right: 2px solid #FFFFFF;
+    padding: 5px 0;
+    text-align: center;
+}
+.resultado-voos-item-perna-trechos-o-trecho-radio > span{
+    margin-right:0 !important;
+}
+.resultado-voos-item-perna-trechos-o-trecho-info-td {
+    display: table-cell;
+    padding: 6px 10px !important;
+}
+.resultado-voos-item-perna-trechos-o-trecho-odd {background-color:#F9F9F9!important;}
+.resultado-voos-item-perna-trechos-o-trecho-radio,
+.resultado-voos-item-perna-trechos-o-trecho-saida,
+.resultado-voos-item-perna-trechos-o-trecho-chegada,
+.resultado-voos-item-perna-trechos-o-trecho-duracao,
+.resultado-voos-item-perna-trechos-o-trecho-paradas,
+.resultado-voos-item-perna-trechos-o-trecho-info {
+	display:table-cell;
+	vertical-align:middle;
+}
+.resultado-voos-item-perna-trechos-o-trecho-paradas {
+	width:70px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-saida {
+	width:90px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-duracao {
+	width:130px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-chegada {
+	width:110px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-radio > span {
+	display: inline-block;
+    height: 18px;
+    margin-right: 10px;
+    text-align: center;
+    width: 40px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-radio span {
+    width: 31px;
+}
+.resultado-voos-item-perna-trechos-o-trecho-radio input {
+	margin:0 0 0 10px;
+	vertical-align:-3px;
+	cursor:pointer;
+}
+.resultado-voos-item-perna-trechos-o-trecho-info {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -104px;
+	width:15px;
+	height:15px;
+    margin-top: 2px;
+	display:block;
+	text-indent:-500px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.resultado-voos-item-rodape {
+	display:table;
+	width:100%;
+	font-size:10px;
+	color:#58595b;
+	margin-top:-8px;
+}
+.resultado-voos-item-rodape a {
+	color:#58595b;
+}
+.resultado-voos-item-rodape-esquerda {
+	display:table-cell;
+	width:60%;
+	text-align:left;
+}
+.resultado-voos-item-rodape-direita {
+	display:table-cell;
+	width:40%;
+	text-align:right;
+}
+.resultado-voos-item-rodape-direita span {
+	display:inline-block;
+	height:15px;
+}
+.resultado-voos-item-trajeto {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -42px;
+	height:15px;
+	padding-left:20px;
+	display:inline-block;
+	margin-right:15px;
+}
+.resultado-voos-item-enviar {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -59px;
+	height:15px;
+	padding-left:20px;
+	display:inline-block;
+    text-indent:-999px;
+    overflow:hidden;
+}
+.resultado-voos-item-facebook {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -74px;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	line-height: 30;
+	overflow:hidden;
+	vertical-align:-4px;
+	margin-left:4px;
+}
+.resultado-voos-item-twitter {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -89px;
+	height:15px;
+	width:15px;
+	display:inline-block;
+	line-height: 30;
+	overflow:hidden;
+	vertical-align:-4px;
+	margin-left:4px;
+}
+.holder-resultado-voos-item-direita-cabecalho {
+	position:relative;
+	width:100%;
+	color:#58595b;
+	font-size:12px;
+	float:left;
+}
+.holder-resultado-voos-item-direita-cabecalho span {
+	float:left;
+	padding:0;
+}
+.holder-resultado-voos-item-direita-cabecalho img {
+	float: right;
+    margin-top: -10px;
+    width: 50px;
+}
+.holder-resultado-voos-item-preco-reservar {
+	background:#f0f0f0;
+	padding:5px 0 20px;
+	float:left;
+	width:100%;
+    text-align:center;
+}
+.resultado-voos-item-holder-preco {
+	display:table;
+	margin:0 auto 5px;
+}
+.resultado-voos-item-moeda {
+	display:table-cell;
+	text-align:right;
+	color:#58595b;
+	font-size:13px;
+	font-weight:bold;
+	letter-spacing:-0.05em;
+	padding-right:3px;
+}
+.resultado-voos-item-o-preco {
+	display:table-cell;
+	text-align:left;
+	color:#c01212;
+	font-weight:bold;
+	letter-spacing:-0.05em;
+	font-size:28px;
+}
+.resultado-voos-item-o-preco-especificacao {
+	display:block;
+	color:#58595b;
+	font-size:10px;
+	text-align:center;
+	letter-spacing:0;
+    padding-bottom:5px;
+}
+.resultado-voos-item-parcelamento {
+	text-decoration:underline;
+	color:#c01212;
+	display:inline-block;
+	text-align:center;
+	font-size:12px;
+	margin:10px 0;
+}
+.resultado-voos-item-reservar {
+	background: url("https://tempsite139.travelexplorer.com.br/App_Themes/WTX.Fox/images/icones/bt-laranja.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #EF8C02;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 23px;
+    padding: 2px 5px 0;
+    text-align: center;
+    width: 85px;
+
+}
+.holder-modal-resultado-voos-item-content 
+{
+    max-height:500px;
+    overflow-x:auto;
+    overflow-y:none;
+}
+.holder-modal-resultado-voos-item {
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:660px;
+	/*height:420px;*/
+	padding:25px;
+	margin:-235px 0 0 -355px;
+	z-index:99999999;
+	background:#eee;
+	border-radius:5px;
+	box-shadow:0 0 6px rgba(0, 0, 0, 0.7);
+	display:none;
+}
+.holder-modal-resultado-voos-item-email {
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:660px;
+	/*height:420px;*/
+	padding:25px;
+	margin:-235px 0 0 -355px;
+	z-index:99999999;
+	background:#eee;
+	border-radius:5px;
+	box-shadow:0 0 6px rgba(0, 0, 0, 0.7);
+	display:none;
+}
+.holder-modal-resultado-voos-item-email table{
+    width:660px;
+}
+
+.holder-modal-resultado-voos-item-email table td {
+    padding-bottom: 10px;
+}
+
+.holder-modal-resultado-voos-item-email .send-flight-to-friend-error{
+    width:622px !important;
+}
+
+.holder-modal-resultado-voos-item-email .send-flight-to-friend-infos label {
+    display: block !important;
+    float: none !important;
+    margin-bottom:5px;
+}
+
+.holder-modal-resultado-voos-item-email .send-flight-to-friend-infos td input {
+    display: block;
+    margin-right: 10px !important;
+    width: 300px !important;
+}
+
+.holder-modal-resultado-voos-item-email .send-flight-to-friend-message textarea {
+    width: 631px !important;
+}
+
+.holder-modal-resultado-voos-item-email .send-flight-to-friend-message .send-button {
+    float: right;
+    line-height: 30px !important;
+    margin-right: 12px;
+    text-align: center;
+    width: 70px;
+}
+
+.modal-resultado-voos-item-ida .modal-resultado-voos-item-perna-col-1 h6 {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat;
+	height:21px;
+	padding-left:45px;
+	font-weight:bold;
+	font-size:15px;
+	letter-spacing:-0.05em;
+	line-height:1.5;
+	display:block;
+	width:45px;
+	color: #155995;
+}
+.modal-resultado-voos-item-volta .modal-resultado-voos-item-perna-col-1 h6 {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -21px;
+	height:21px;
+	padding-left:45px;
+	font-weight:bold;
+	font-size:15px;
+	letter-spacing:-0.05em;
+	line-height:1.5;
+	display:block;
+	width:45px;
+	color: #155995;
+}
+.modal-resultado-voos-item-perna-col img {
+	width:62px;
+	border:1px solid #dddee2;
+	margin-top:10px;
+}
+.modal-resultado-voos-item-perna-col-holder {
+	display:table;
+	width:100%;
+}
+.modal-resultado-voos-item-perna-col {
+	display:table-cell;
+	vertical-align:top;
+}
+.modal-resultado-voos-item-perna-col span {
+	display:block;
+}
+.modal-resultado-voos-item-perna-alerta-atrasos-cancelamentos {
+	background:#fff;
+	border:1px solid #dddee2;
+	color:#58595b;
+	font-size:11px;
+	text-align:center;
+	display:block;
+	padding:5px 0;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+.alerta-modal-resultado-voos-item {
+	margin-bottom:15px;
+	background:#e0e4f3;
+	border:1px solid #155995;
+	padding:10px 0;
+	text-align:center;
+}
+.alerta-modal-resultado-voos-item span {
+	display:inline-block;
+	font-weight:bold;
+	color:#58595b;
+}
+.modal-resultado-voos-item-perna-col .item-perna-sentido {
+	color:#999999;
+	font-size:11px;
+	height:16px;
+}
+.modal-resultado-voos-item-perna-col .item-perna-cidade {
+	color:#155995;
+	font-size:13px;
+	font-weight:bold;
+}
+.modal-resultado-voos-item-perna-col .item-perna-aeroporto {
+	color:#155995;
+	font-size:13px;
+	margin-bottom:10px;
+}
+.modal-resultado-voos-item-perna-col .item-perna-data-hora {
+	color:#58595b;
+	font-size:13px;
+	font-weight:bold;
+}
+.modal-resultado-voos-item-perna-col-1 {
+	width:100px;
+	padding-left:10px;
+}
+.modal-resultado-voos-item-perna-col-2 {
+	width:28%;
+	padding-right:20px;
+	padding-top:5px;
+}
+.modal-resultado-voos-item-perna-col-3 {
+	font-size:13px;
+	color:#58595b;
+	padding-top:21px;
+	width:170px;
+}
+.modal-resultado-voos-item-perna-col .item-perna-classe {
+	margin-bottom:10px;
+}
+.alerta-modal-resultado-voos-item-tempo {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -183px;
+	padding-left:35px;
+	height:26px;
+	line-height: 2.2;
+	margin:5px 0 10px;
+}
+.alerta-modal-resultado-voos-item-troca {
+	background:url(https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/bgs-novo-resultado.png) no-repeat 0 -209px;	
+	padding-left:40px;
+	height: 24px;
+	line-height: 2;
+	margin:5px 0 10px;
+}
+.alerta-modal-resultado-voos-item span label {
+	color:#155995;
+	margin-right:5px;
+}
+.modal-resultado-voos-item-fechar, .modal-resultado-voos-item-fechar-mail {
+	cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    width: 30px;
+}
+.resultado-voos-item-alerta-selecione {
+	display:block;
+	margin-bottom:20px;
+	background:#fff9b5;
+	border:1px solid #ffe363;
+	padding:10px;
+	text-align:center;
+	margin-left:10px;
+	color:#666;
+	font-size:12px;
+	font-weight:bold;
+}
+.resultado-voos-item-perna-trechos-o-trecho-radio-interna {
+	background: none repeat scroll 0 0 #FFF9B5;
+    border: 1px solid #FFE363;
+    padding: 3px 0 0;
+}
+
+#divDayPeriodgo label input, #divDayPeriodback label input, 
+#divDayPeriodgo label strong, #divDayPeriodback label strong  {
+    line-height: 20px;
+    margin-top: 3px;
+    margin-right: 4px;
+}
+#divDayPeriodgo label span, #divDayPeriodback label span{
+    color: #999999;
+    float: right;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    *margin-top:-20px;
+}
+#divDayPeriodgo label, #divDayPeriodback label  {
+    height: 20px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 6px 40px 6px 0;
+}
+#divDayPeriodgo label.lbl-preco-manha, #divDayPeriodback label.lbl-preco-manha {
+  background:url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat right 2px;
+}
+#divDayPeriodgo label.lbl-preco-tarde, #divDayPeriodback label.lbl-preco-tarde {
+  background:url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat right -39px;
+}
+#divDayPeriodgo label.lbl-preco-noite, #divDayPeriodback label.lbl-preco-noite {
+  background:url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat right -75px;
+}
+#divDayPeriodgo label.lbl-preco-madrugada, #divDayPeriodback label.lbl-preco-madrugada {
+  background:url("https://tempsite139.travelexplorer.com.br/App_Themes/FSX.Padrao/img/icon-horarios.png") no-repeat right -114px;
+}
+#divDayPeriodgo input, #divDayPeriodback input  
+{
+    vertical-align:-2px !important;
+}
+
+/* ================ Término dos estilos dos novos resultados agrupados ================ */
+
+/* Minification failed (line 496, error number 1049): Browser hack generates invalid CSS */

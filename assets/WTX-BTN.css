@@ -1,0 +1,344 @@
+/* botoes */
+
+/* adicionar - voos */
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a,
+#resultados #voos .add-flight-cart,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart,
+#hoteis .rooms-periods-item-part #divBtnCart a,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart {
+    padding: 8px 0px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 0;
+    background: #00669c;
+    border-bottom: 4px solid #00517b;
+    box-shadow: none;
+    height: auto;
+    line-height: normal !important;
+    width: 80% !important;
+    font-size: 13px;
+    order: 6;
+}
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a::before,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart::before,
+#resultados #voos .add-flight-cart::before,
+#hoteis .rooms-periods-item-part #divBtnCart a::before,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart::before {
+    content: "\f07a";
+    font-family: FontAwesome !important;
+    margin-right: 5px;
+}
+
+/* reservar - voos */
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve,
+#hoteis .rooms-periods-item-part #divBtnReservar a,
+#resultados #voos .resultado-voos-item-reservar {
+    padding: 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 0;
+    background: #0c81bf;
+    border-bottom: 4px solid #00669c;
+    box-shadow: none;
+    height: auto;
+    line-height: normal !important;
+    width: 80% !important;
+    font-size: 13px;
+    margin-top: 10px;
+    order: 7;
+}
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input::before,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar::before,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve::before,
+#hoteis .rooms-periods-item-part #divBtnReservar a::before,
+#resultados #voos .resultado-voos-item-reservar::before {
+    content: "\f274";
+    margin-right: 5px;
+    font-family: FontAwesome !important;
+}
+
+#divBtnReservar a.reserve-button {
+    padding: 8px 0px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    color: #fff !important;
+    position: relative !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+    font-family: "Montserrat", sans-serif !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #f27c00 !important;
+    box-shadow: 0px 4px 0px 0px #CC6900 !important;
+    height: auto !important;
+    line-height: normal !important;
+    width: 80% !important;
+    font-size: 13px !important;
+    margin-top: 10px !important;
+}
+
+/* carrinho de compras */
+#cart .sidebar #sidebarData .buy-box button {
+    padding: 8px 0px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #2A8D39;
+    box-shadow: 0px 4px 0px 0px #1F6629 !important;
+    height: auto;
+    line-height: normal !important;
+    width: 100% !important;
+    font-size: 13px;
+}
+.continue-box #btContinueBuy {
+    padding: 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none !important;
+    border-radius: 0;
+    background: #f27c00;
+    box-shadow: none;
+    height: auto;
+    line-height: normal !important;
+    width: 100% !important;
+    font-size: 13px;
+    margin-top: 10px;
+    order: 7;
+    border-bottom: 5px solid #005684 !important;
+}
+#cart .sidebar #sidebarData .clean-box a {
+    padding: 5px 30px;
+    text-decoration: none;
+    min-height: 25px;
+    color: #777;
+    position: relative;
+    display: inline-block;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    border: none;
+    background: #cbcbcb;
+    border-radius: 0 !important;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0px 4px 0px 0px #777;
+}
+
+.form-agrupador-interno-bts-acoes-finais span input#btNextPaxSeats {
+    padding: 7px 30px;
+    text-decoration: none;
+    min-height: 32px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background: #0050a0 !important;
+    box-shadow: 0px 4px 0px 0px #063488;
+    margin-right: 2%;
+}
+
+.form-agrupador-interno-bts-acoes-finais span input#btCloseSeatMap {
+    padding: 7px 30px;
+    text-decoration: none;
+    min-height: 32px;
+    color: #434343;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background: #cbcbcb !important;
+    box-shadow: 0px 4px 0px 0px #777;
+}
+
+.form-agrupador-interno-bts-acoes-finais span input#btConfirmPaxSeats {
+    padding: 9px 30px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #2A8D39 !important;
+    box-shadow: 0px 4px 0px 0px #1F6629 !important;
+    height: auto;
+    line-height: normal !important;
+    width: 100% !important;
+    font-size: 13px;
+}
+
+input[name=abrirMapa] {
+    padding: 9px 10px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #2A8D39 !important;
+    box-shadow: 0px 4px 0px 0px #1F6629 !important;
+    height: auto;
+    line-height: normal !important;
+    width: auto !important;
+    font-size: 13px;
+}
+
+/* detalhes pacotes */
+#detalhes #pacotes .fecharDetalhePreco {
+    background: #cbcbcb;
+    box-shadow: 0px 4px 0px 0px #777;
+    color: #2d2d2d;
+    padding: 8px 0px;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 5px auto 10px !important;
+    display: block;
+    width: 100%;
+}
+
+#detalhes #pacotes .fecharDetalhePreco::before {
+    content: "\f00d";
+    font-family: FontAwesome !important;
+    margin-right: 8px;
+}
+
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    background: #f27c00;
+    box-shadow: 0px 4px 0px 0px #b55e02;
+    height: auto;
+    line-height: normal;
+    width: 138px !important;
+    padding: 8px 0px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:last-child {
+    padding: 8px 30px;
+    text-decoration: none;
+    height: auto;
+    line-height: normal;
+    color: #434343;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: #cbcbcb !important;
+    box-shadow: 0px 4px 0px 0px #777;
+}
+
+/* em comum nos btn */
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:hover,
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:last-child:hover,
+#tabXHoteis .search-modal-more-options .search-modal-content .btns .btn-cancel:hover,
+#detalhes #pacotes .fecharDetalhePreco:hover,
+#cart .sidebar #sidebarData .clean-box a:hover,
+#cart .sidebar #sidebarData .buy-box button:hover,
+.continue-box #btContinueBuy:hover,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input:hover,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a:hover,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar:hover,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart:hover,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart:hover,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve:hover,
+#hoteis .rooms-periods-item-part #divBtnCart a:hover,
+#hoteis .rooms-periods-item-part #divBtnReservar a:hover,
+#resultados #voos .add-flight-cart:hover,
+#resultados #voos .resultado-voos-item-reservar:hover {
+    opacity: 0.9;
+}
+
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:focus,
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:last-child:focus,
+#tabXHoteis .search-modal-more-options .search-modal-content .btns .btn-cancel:focus,
+#detalhes #pacotes .fecharDetalhePreco:focus,
+#cart .sidebar #sidebarData .clean-box a:focus,
+#cart .sidebar #sidebarData .buy-box button:focus,
+.continue-box #btContinueBuy:focus,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input:focus,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a:focus,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar:focus,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart:focus,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart:focus,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve:focus,
+#hoteis .rooms-periods-item-part #divBtnCart a:focus,
+#hoteis .rooms-periods-item-part #divBtnReservar a:focus,
+#resultados #voos .add-flight-cart:focus,
+#resultados #voos .resultado-voos-item-reservar:focus {
+    outline: none;
+}
+
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:active,
+div[aria-labelledby*="ui-dialog-title-modalRooms"] .ui-dialog-buttonpane button.ui-button:last-child:active,
+#tabXHoteis .search-modal-more-options .search-modal-content .btns .btn-cancel:active,
+#detalhes #pacotes .fecharDetalhePreco:active,
+#cart .sidebar #sidebarData .clean-box a:active,
+#cart .sidebar #sidebarData .buy-box button:active,
+.continue-box #btContinueBuy:active,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input:active,
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a:active,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar:active,
+#atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart:active,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart:active,
+#resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve:active,
+#hoteis .rooms-periods-item-part #divBtnCart a:active,
+#hoteis .rooms-periods-item-part #divBtnReservar a:active,
+#resultados #voos .add-flight-cart:active,
+#resultados #voos .resultado-voos-item-reservar:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    box-shadow: 0px 0px 0px 0px;
+    border: none;
+}
+
+#divBtnReservar {
+    width: 100%;
+}

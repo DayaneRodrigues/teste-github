@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Lato', sans-serif !important;
+}
+
+.content-login {
+    width: 100vw !important;
+    height: 100vh;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.content-logo-login #p_lt_ctl00_EditableImage_ucEditableImage_imgImage{
+    width: 50% !important;
+}
+
+.content-logo-login,
+#login .content-logo-login {
+    padding: 0px;
+}
+
+.box-login .login-form-login, #login .box-login .login-form-login, #divRegisterBoth a {
+    font-family: 'Lato', sans-serif;
+    background-color: #FE676E;
+    box-shadow: none;
+}
+
+.box-login .login-form-login:hover,
+#login .box-login .login-form-login:hover,
+#divRegisterBoth a:hover {
+    background-color: #FD8F52;
+}
+
+.box-login .form-item label,
+#login .box-login .form-item label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+
+.box-login .form-item input[type="text"],
+#login .box-login .form-item input[type="text"] {
+    font-size: 1.5rem;
+    background: #fff;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.box-login .form-item input[type="password"],
+#login .box-login .form-item input[type="password"] {
+    font-size: 1.5rem;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.box-login #loginconfirmlinks a{
+    font-size: 1.5rem;
+    color:#FE676E;
+    font-weight: 600;
+}
+
+/* resultados voos */
+
+.resultado-voos-item-perna-cabecalho {
+    background: #f5f5f5;
+    /*border-bottom: 1px solid #ced4da;*/
+}
+/*
+#output .content-module .holder-resultado-voos-item .holder-resultado-voos-item-direita{
+    border-left: 1px solid #ced4da;
+}*/
+header#header .conteudo .menu .itens .shopping-cart-wrapper #shoppingCart #iconcartinfo {
+    font-family: 'Lato', sans-serif;
+    color: #FD8F52;
+}
+
+header#header .conteudo .menu .itens #frmLoggedMenu a {
+    color: #FD8F52;
+    font-family: 'Lato', sans-serif;
+}
+
+header#header .conteudo .menu .itens #frmLoggedMenu a {
+    color: #FD8F52;
+    font-family: 'Lato', sans-serif;
+}
+
+header#header .mainMenu .contMenu {
+    background: #FE676E;
+}
+
+header#header .mainMenu .contMenu ul#menuElem li:hover,
+header#header .mainMenu .contMenu ul#menuElem li.HighLighted,
+header#header .mainMenu .contMenu ul#menuElem li.HighLighted a:hover {
+    background: #FFBD71;
+}
+
+header#header .mainMenu .contMenu ul#menuElem, header#header .mainMenu .contMenu ul#menuElem li:hover>ul {
+    list-style: none;
+    background: #FE676E;
+}
+
+.buscador-fechar .buscador-refazer {
+    background: #FD8F52;
+    font-family: 'Lato', sans-serif;
+}
+.headerBg h1 {
+    color: #FD8F52;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#voos .sidebar .sidebar-top {
+    background: #FD8F52;
+}
+
+#resultados .pg-voos #Geral .sidebar-holder .sidebar .sidebar-item h3 {
+    font-family: 'Lato', sans-serif !important;
+    border-bottom: 1px solid #FD8F52;
+}
+
+.barra-preco .ui-slider-handle:first-of-type, .barra-preco .ui-slider-handle:last-child {
+    background: #FD8F52 !important;
+
+}
+
+#resultados .pg-voos #divAirportDepartureGo p span, #resultados .pg-voos #divAirportDepartureBack p span {
+    background-color: #FD8F52;
+}
+#resultados #voos .the-matrix ul li a {
+    color: #FD8F52;
+}
+
+#output .content-module .holder-resultado-voos-item .holder-resultado-voos-item-esquerda .resultado-voos-item-perna .resultado-voos-item-perna-cabecalho .resultado-voos-item-perna-cabecalho-titulo {
+    background: #FD8F52;
+}
+
+.resultado-voos-item-perna-cabecalho-cidades {
+    color: #FD8F52;
+}
+
+#output .resultado-voos-item-o-preco {
+    color: #FD8F52;
+}
+
+#resultados .resultado-voos-item-perna-trechos-o-trecho-info:before {
+    color: #FFBD71;
+}
+
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 a, #resultados #voos .add-flight-cart, #resultados #carros #infoCars .content-item-car-result .itemListCar .btn-add-cart, #hoteis .rooms-periods-item-part #divBtnCart a, #atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis a.btn-add-cart {
+ 
+background: #FE676E;
+border-bottom: none;
+    
+}
+
+#detalhes #pacotes #contentResultados .tabs .tabsBody table.tiposQuarto .col6 input, #atividades .detalhes-atividades #resultadosDaBusca #contentResultados .tabsBody .hoteis input.btSelecionar, #resultados #carros #infoCars .content-item-car-result .itemListCar .btn-reserve, #hoteis .rooms-periods-item-part #divBtnReservar a, #resultados #voos .resultado-voos-item-reservar {
+    font-family: 'Lato', sans-serif;
+    background: #FD8F52;
+    border-bottom: none;
+}
+
+.the-matrix-nav a.the-matrix-nav-back::before {
+    color: #FD8F52;
+}
+
+.the-matrix-nav a.the-matrix-nav-forward::before {
+    color: #FD8F52;
+}
+
+#resultados .pg-voos .resultado-voos-item-enviar {
+    color: #FD8F52 !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.familyInformation::before {
+    color: #FD8F52;
+}
+
+#Geral .main-content .the-content .the-pagination ul li span.pagination-selected a {
+    background: #FD8F52;
+}
+
+.resultado-voos-item-perna-cabecalho h6 {
+    background: url(../images/icon-ida-resultados.png) no-repeat !important;
+}
+
+
+#resultados .pg-carros #carros .the-pagination ul li span.pagination-selected a {
+    background: #FD8F52;
+}
+#Geral .main-content .the-content .the-pagination ul li a:hover {
+    background: #FFBD71;
+}
+
+/* #/6.1.9 - CARRINHO DE COMPRAS: RESPONSIVO  MOBILE # */
+
+@media (max-width: 767px) {
+  
+    
+
+    header#header #container .conteudo .logo {
+        width: 100% !important;
+        margin-top:-10px;
+        max-width: 130px; 
+        position: absolute;
+        left: 50%;
+        margin-left: -65px;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    #resultados .pg-voos #output .content-module .holder-resultado-voos-item .holder-resultado-voos-item-direita .holder-resultado-voos-item-preco-reservar .add-flight-cart {
+        background-color: #FE676E;
+        box-shadow: none;
+    }
+
+    #resultados .pg-voos #output .content-module .holder-resultado-voos-item .holder-resultado-voos-item-direita .holder-resultado-voos-item-preco-reservar .resultado-voos-item-reservar {
+        background: #FD8F52 !important;
+        box-shadow:none;
+    }
+}
